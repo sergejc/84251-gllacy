@@ -97,10 +97,170 @@
     </ul>
     <!-- END .bread-crumbs -->
   </header>
-  <main></main>
+  <main class="container">
+    <h1>Сливочное мороженое</h1>
+    <form class="icecream-filters">
+      <div class="icecream-filters__sort-order">
+        <label for="sort">Сортировка:</label>
+        <select id="sort" name="sort">
+          <option id="popularity">по популярности</option>
+          <option id="price-asc">сначала недорогие</option>
+          <option id="price-desc">сначала дорогие</option>
+          <option id="fat-percentage">по жирности</option>
+        </select>
+      </div>
+      <!-- END .icecream-filters__sort-order -->
+      <div class="icecream-filters__price">
+        <p>Цена: 100 руб. – 500 руб.</p>
+        <input type="range" min=100 max=500 name="price">
+      </div>
+      <!-- END .icecream-filters__price --> 
+      <div class="icecream-filters__fat-percentage">
+        <label>
+          <input type="radio" name="percentage" value="0">0%
+        </label>
+        <label>
+          <input type="radio" name="percentage" value="10">до 10%
+        </label>
+        <label>
+          <input type="radio" name="percentage" value="30">до 30%
+        </label>
+        <label>
+          <input type="radio" name="percentage" value="31">выше 30%
+        </label>
+      </div>
+      <!-- END .icecream-filters__percentage --> 
+      <div class="icecream-filters__ingredients">
+        <label for="chocolate">
+          <input id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">шоколадные
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients[]" value="сахарные присыпки">сахарные присыпки
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients[]" value="фрукты">фрукты
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients[]" value="сиропы">сиропы
+        </label>
+        <label>
+          <input type="checkbox" name="ingredients[]" value="джемы">джемы
+        </label>
+      </div>
+      <!-- END .icecream-filters__ingredients -->
+    </form>
+    <section class="catalog">
+      <h2 class="hidden">Каталог мороженого</h2>
+      <ul class="products">
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="product__image" width="200" height="200">
+          <p class="product__price">310&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочно-кофейное с кусочками шоколада" class="product__image" width="200" height="200">
+          <p class="product__price">380&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="product__image" width="200" height="200">
+          <p class="product__price">355&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочное крем-брюле с карамельной подливкой" class="product__image" width="200" height="200">
+          <p class="product__price">415&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочное с брусничным джемом" class="product__image" width="200" height="200">
+          <p class="product__price">325&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочное с брусничным джемом</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочно-черничное с цельными ягодами черники " class="product__image" width="200" height="200">
+          <p class="product__price">410&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочно-черничное с цельными ягодами черники </a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочно-лимонное с карамельной присыпкой" class="product__image" width="200" height="200">
+          <p class="product__price">375&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочное с шоколадной стружкой" class="product__image" width="200" height="200">
+          <p class="product__price">320&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочное с шоколадной стружкой</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочно-ванильное с кусочками шоколада" class="product__image" width="200" height="200">
+          <p class="product__price">440&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочноe с ментоловым сиропом" class="product__image" width="200" height="200">
+          <p class="product__price">435&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочноe с ментоловым сиропом</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочное с кусочками черного шоколада" class="product__image" width="200" height="200">
+          <p class="product__price">355&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочное с кусочками черного шоколада</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+        <li class="product">
+          <img src="http://placehold.it/200x200" alt="Сливочное с мятным сиропом" class="product__image" width="200" height="200">
+          <p class="product__price">420&#8381;/
+            <span class="product__weight">кг</span>
+          </p>
+          <a class="product__link" href="#">Сливочное с мятным сиропом</a>
+          <button class="product__quick-view">Быстрый просмотр</button>
+        </li>
+      </ul>
+    </section>
+    <!-- END .catalog -->
+    <ul class="pagination">
+      <li class="pagination__item"><a href="#">1</a></li>
+      <li class="pagination__item"><a href="#">2</a></li>
+      <li class="pagination__item"><a href="#">3</a></li>
+      <li class="pagination__item"><a href="#">4</a></li>
+      <li class="pagination__item"><a href="#">5</a></li>
+    </ul>
+  </main>
   <footer class="main-footer">
-    <ul class="social">
-      <li class="social__item">
+    <ul class="social"> <li class="social__item">
         <a href="vk.com">VK</a>
       </li>
       <li class="social__item">
