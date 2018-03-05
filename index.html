@@ -237,11 +237,14 @@
     </div><!-- END .copyright -->
   </footer><!-- END .main-footer -->
   <div class="feed-back-popup">
-    <b>Мы обязательно вам ответим!</b>
-    <input type="text" name="name" placeholder="Как вас зовут?">
-    <input type="email" name="email" placeholder="Ваша почта для ответа?">
-    <textarea name="feed-back" cols="30" rows="10">Напишите что-нибудь...</textarea>
-    <button type="submit">Отправить</button>
+    <form action="#">
+      <b>Мы обязательно вам ответим!</b>
+      <input type="text" name="name" placeholder="Как вас зовут?">
+      <input type="email" name="email" placeholder="Ваша почта для ответа?">
+      <textarea name="feed-back" cols="30" rows="10">Напишите что-нибудь...</textarea>
+      <button>Отправить</button>
+      <button class="feed-back-popup__close"></button>
+    </form>
   </div><!-- END .feed-back-popup -->
   <script src="js/script.js"></script>
 </body>
