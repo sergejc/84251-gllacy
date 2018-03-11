@@ -46,30 +46,55 @@
     </nav><!-- END .main-nav -->
     <ul class="user-nav">
       <li class="user-nav__item">
-        <button class="user-nav__search"></button>
+        <button class="user-nav__search"><span class="visually-hidden">Открыть модальное окно поиска</span></button>
         <div class="user-nav__search-form">
-          <form action="#" class="site-search">
-            <input type="text" placeholder="Что ищем?" name="search">
+          <form action="#" class="site-search" method="get">
+            <label for="site-search__input" class="visually-hidden">Поиск по сайту</label>
+            <input id="site-search__input" type="text" placeholder="Что ищем?" name="search">
           </form>
         </div>
       </li><!-- END .user-nav__item -->
       <li class="user-nav__item">
-        <form action="#" class="user-nav__login">
-          <input type="email" name="email">
-          <input type="password" name="password">
-          <div class="user-nav__action">
-            <button class="user-nav__send">Войти</button>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </div><!-- .user-nav__action -->
-        </form><!-- END .user-nav__login -->
+          <button class="user-nav__search"><span class="visually-hidden">Открыть модальное окно Логин - Регистрация</span></button>
+          <form action="#" class="user-nav__login" method="post">
+            <fieldset>
+              <legend class="visually-hidden">Логин - Регистрация</legend>
+              <label for="user-nav__email" class="visually-hidden">Логин</label>
+              <input id="user-nav__email" type="email" name="email">
+              <label for="user-nav__password" class="visually-hidden">Пароль</label>
+              <input id="user-nav__password" type="password" name="password">
+              <div class="user-nav__action">
+                <button class="user-nav__send" type="submit">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div><!-- .user-nav__action -->
+            </fieldset>
+          </form><!-- END .user-nav__login -->
       </li><!-- END .user-nav__item -->
       <li class="user-nav__item">
         <div class="shopping-card">
-          <p class="shopping-card__quantity">2 товара</p>
-          <form action="#" class="shopping-card__form">
-            <div class="shopping-card__item"></div>
-            <button class="shopping-card__order">Оформить заказ</button>
+          <span class="shopping-card__quantity">2 товара</span>
+          <form action="#" class="shopping-card__form" method="post">
+            <ul class="shopping-card__list">
+              <li class="shopping-card__item">
+                <input type="hidden" name="product-id[]">
+                <button class="shopping-card__item-remove"><span class="visually-hidden">Удалить из корзины</span></button>
+                <img src="http://placehold.it/33x33" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                <span class="shopping-card__item-descriptin">Пломбир с апельсиновым джемом</span>
+                <span class="shopping-card__item-price-weight">1,5 кг х 200 руб.</span>
+                <span class="shopping-card__item-price">300 руб.</span>
+              </li>
+              <li class="shopping-card__item">
+                <input type="hidden" name="product-id[]">
+                <button class="shopping-card__item-remove"><span class="visually-hidden">Удалить из корзины</span></button>
+                <img src="http://placehold.it/33x33" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                <span class="shopping-card__item-descriptin">Клубничный пломбир с присыпкой из белого шоколада</span>
+                <span class="shopping-card__item-price-weight">1,5 кг х 200 руб.</span>
+                <span class="shopping-card__item-price">450 руб.</span>
+              </li>
+            </ul>
+            <span class="shoping-card__total">Итого: 750 руб.</span>
+            <button class="shopping-card__order" type="submit">Оформить заказ</button>
           </form><!-- END .shopping-card__form -->
         </div><!-- END .shopping-card -->
       </li><!-- END .user-nav__item -->
@@ -90,46 +115,49 @@
   </header><!-- END .main-header -->
   <main class="container">
     <h1>Сливочное мороженое</h1>
-    <form class="filters" action="#">
-      <div class="filters__sort-order">
-        <label for="sort">Сортировка:</label>
-        <select id="sort" name="sort">
-          <option value="popularity">по популярности</option>
-          <option value="price-asc">сначала недорогие</option>
-          <option value="price-desc">сначала дорогие</option>
-          <option value="fat-percentage">по жирности</option>
-        </select>
-      </div><!-- END .filters__sort-order -->
-      <div class="filters__price">
-        <p>Цена: 100 руб. – 500 руб.</p>
-        <input type="range" min=100 max=500 name="price">
-      </div><!-- END .filters__price -->
-      <div class="filters__fat-percentage">
-        <label for="percentage0">0%</label>
-        <input id="percentage0" type="radio" name="percentage" value="0">
-        <label for="percentage10">до 10%</label>
-        <input id="percentage10"  type="radio" name="percentage" value="10">
-        <label for="percentage30">до 30%</label>
-        <input id="percentage30"  type="radio" name="percentage" value="30">
-        <label for="percentage31">выше 30%</label>
-        <input id="percentage31" type="radio" name="percentage" value="31">
-      </div><!-- END .filters__percentage -->
-      <div class="filters__ingredients">
-        <label for="chocolate">шоколадные</label>
-        <input id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">
-        <label for="sugar">сахарные присыпки</label>
-        <input id="sugar" type="checkbox" name="ingredients[]" value="сахарные присыпки">
-        <label for="fruits">фрукты</label>
-        <input id="fruits" type="checkbox" name="ingredients[]" value="фрукты">
-        <label for="sirope">сиропы</label>
-        <input id="sirope" type="checkbox" name="ingredients[]" value="сиропы">
-        <label for="jam">джемы</label>
-        <input id="jam" type="checkbox" name="ingredients[]" value="джемы">
-      </div><!-- END .filters__ingredients -->
-      <button class="filter__apply">Применить</button>
+    <form class="filters" action="#" method="get">
+      <fieldset disabled="disabled">
+        <legend class="visually-hidden">Фильтры товаров</legend>
+        <div class="filters__sort-order">
+          <label for="sort">Сортировка:</label>
+          <select id="sort" name="sort">
+            <option value="popularity">по популярности</option>
+            <option value="price-asc">сначала недорогие</option>
+            <option value="price-desc">сначала дорогие</option>
+            <option value="fat-percentage">по жирности</option>
+          </select>
+        </div><!-- END .filters__sort-order -->
+        <div class="filters__price">
+          <label for="filters__price">Цена: 100 руб. – 500 руб.</label>
+          <input id="filters__price" type="range" min=100 max=500 name="price">
+        </div><!-- END .filters__price -->
+        <div class="filters__fat-percentage">
+          <label for="percentage0">0%</label>
+          <input id="percentage0" type="radio" name="percentage" value="0">
+          <label for="percentage10">до 10%</label>
+          <input id="percentage10"  type="radio" name="percentage" value="10">
+          <label for="percentage30">до 30%</label>
+          <input id="percentage30"  type="radio" name="percentage" value="30">
+          <label for="percentage31">выше 30%</label>
+          <input id="percentage31" type="radio" name="percentage" value="31">
+        </div><!-- END .filters__percentage -->
+        <div class="filters__ingredients">
+          <label for="chocolate">шоколадные</label>
+          <input id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">
+          <label for="sugar">сахарные присыпки</label>
+          <input id="sugar" type="checkbox" name="ingredients[]" value="сахарные присыпки">
+          <label for="fruits">фрукты</label>
+          <input id="fruits" type="checkbox" name="ingredients[]" value="фрукты">
+          <label for="sirope">сиропы</label>
+          <input id="sirope" type="checkbox" name="ingredients[]" value="сиропы">
+          <label for="jam">джемы</label>
+          <input id="jam" type="checkbox" name="ingredients[]" value="джемы">
+        </div><!-- END .filters__ingredients -->
+        <button class="filter__apply">Применить</button>
+      </fieldset>
     </form><!-- END .filter -->
     <section class="products">
-      <h2 class="visual-hidden">Каталог мороженого</h2>
+      <h2 class="visually-hidden">Каталог мороженого</h2>
       <ul class="products_list">
         <li class="product_item">
           <img src="img/catalog-1-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="product__image"

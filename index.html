@@ -43,31 +43,34 @@
     </nav><!-- END .main-nav -->
     <ul class="user-nav">
         <li class="user-nav__item">
-          <button class="user-nav__search"></button>
+          <button class="user-nav__search"><span class="visually-hidden">Открыть модальное окно поиска</span></button>
           <div class="user-nav__search-form">
-            <form action="#" class="site-search">
-              <input type="text" placeholder="Что ищем?" name="search">
+            <form action="#" class="site-search" method="get">
+              <label for="site-search__input" class="visually-hidden">Поиск по сайту</label>
+              <input id="site-search__input" type="text" placeholder="Что ищем?" name="search">
             </form>
           </div>
         </li><!-- END .user-nav__item -->
         <li class="user-nav__item">
-          <form action="#" class="user-nav__login">
-            <input type="email" name="email">
-            <input type="password" name="password">
-            <div class="user-nav__action">
-              <button class="user-nav__send">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </div><!-- .user-nav__action -->
+          <button class="user-nav__search"><span class="visually-hidden">Открыть модальное окно Логин - Регистрация</span></button>
+          <form action="#" class="user-nav__login" method="post">
+            <fieldset>
+              <legend class="visualy-hidden">Логин - Регистрация</legend>
+              <label for="user-nav__email" class="visually-hidden">Логин</label>
+              <input id="user-nav__email" type="email" name="email">
+              <label for="user-nav__password" class="visually-hidden">Пароль</label>
+              <input id="user-nav__password" type="password" name="password">
+              <div class="user-nav__action">
+                <button class="user-nav__send" type="submit">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div><!-- .user-nav__action -->
+            </fieldset>
           </form><!-- END .user-nav__login -->
         </li><!-- END .user-nav__item -->
         <li class="user-nav__item">
           <div class="shopping-card">
-            <p class="shopping-card__quantity">2 товара</p>
-            <form action="#" class="shopping-card__form">
-              <div class="shopping-card__item"></div>
-              <button class="shopping-card__order">Оформить заказ</button>
-            </form><!-- END .shopping-card__form -->
+            <span class="shopping-card__quantity">Пусто</span>
           </div><!-- END .shopping-card -->
         </li><!-- END .user-nav__item -->
       </ul><!-- END .user-nav -->
@@ -77,12 +80,15 @@
     </div><!-- END .contacts -->
   </header><!-- END .main-header -->
   <main class="container">
-    <h1 class="visual-hidden">Магазин GllacyShop</h1>
+    <h1 class="visually-hidden">Магазин GllacyShop</h1>
     <div class="slider">
       <div class="slider__nav">
-        <input type="radio" name="icecream" value="icecream1">
-        <input type="radio" name="icecream" value="icecream1">
-        <input type="radio" name="icecream" value="icecream1">
+        <input id="slider__icecream1" class="visually-hidden" type="radio" name="icecream" value="icecream1">
+        <label for="slider__icecream1"><span class="visually-hidden">Слайд 1</span></label>
+        <input id="slider__icecream2" class="visually-hidden" type="radio" name="icecream" value="icecream1">
+        <label for="slider__icecream2"><span class="visually-hidden">Слайд 2</span></label>
+        <input id="slider__icecream3" class="visually-hidden" type="radio" name="icecream" value="icecream1">
+        <label for="slider__icecream3"><span class="visually-hidden">Слайд 3</span></label>
       </div>
       <div class="slider__item">
         <figure class="slider__image">
@@ -108,7 +114,7 @@
     </div>
     <!-- END .slider -->
     <section class="banner">
-      <h2 class="visual-hidden">Наши акции</h2>
+      <h2 class="visually-hidden">Наши акции</h2>
       <ul class="promotion">
         <li class="promotion__item">
           <h3>Малинка даром!</h3>
@@ -123,7 +129,7 @@
       </ul><!-- END .promotion -->
     </section><!-- END .banner -->
     <section class="best-sellers">
-      <h2 class="visual-hidden">Наши бестселлеры</h2>
+      <h2 class="visually-hidden">Наши бестселлеры</h2>
       <ul class="best-sellers__list">
         <li class="best-sellers__item">
           <img src="img/icecream-hit1.jpg" alt="Мороженое сливочное" class="best-sellers__image" width="200" height="200">
@@ -172,18 +178,18 @@
         <a class="news__header" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section><!-- END .news -->
       <section class="subscribe">
-        <h2 class="visual-hidden">Подписка на рассылку</h2>
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
           спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="#" class="subscribe__form">
+        <form action="#" class="subscribe__form" method="post">
           <input type="email" class="subscribe__input">
-          <button class="subscribe__action">Отправить</button>
+          <button class="subscribe__action" type="submit">Отправить</button>
         </form>
       </section><!-- END .subscribe -->
     </div>
     <section class="map">
       <section class="feed-back">
-        <h2 class="visual-hidden">Форма обратной связи</h2>
+        <h2 class="visually-hidden">Форма обратной связи</h2>
         <address class="feed-back__address">Адрес главного офиса <br> и офлайн-магазина:
           <span class="feed-back__address--bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
         </address>
@@ -237,14 +243,19 @@
     </div><!-- END .copyright -->
   </footer><!-- END .main-footer -->
   <div class="feed-back-popup">
-    <form action="#">
-      <b>Мы обязательно вам ответим!</b>
-      <input type="text" name="name" placeholder="Как вас зовут?">
-      <input type="email" name="email" placeholder="Ваша почта для ответа?">
-      <textarea name="feed-back" cols="30" rows="10">Напишите что-нибудь...</textarea>
-      <button>Отправить</button>
-      <button class="feed-back-popup__close"></button>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Мы обязательно вам ответим!</legend>
+        <label for="feed-back-popup__user-name" class="visually-hidden">Имя</label>
+        <input id="feed-back-popup__user-name" type="text" name="name" placeholder="Как вас зовут?">
+        <label for="feed-back-popup__email" class="visually-hidden">Адрес электронной почты</label>
+        <input id="feed-back-popup__email" type="email" name="email" placeholder="Ваша почта для ответа?">
+        <label for="feed-back__text" class="visually-hidden">Текст для отзыва</label>
+        <textarea id="feed-back__text" name="feed-back" cols="30" rows="10">Напишите что-нибудь...</textarea>
+        <button type="submit">Отправить</button>
+      </fieldset>
     </form>
+    <button class="feed-back-popup__close" aria-label="Закрыть форму обратной своей" type="button"></button>
   </div><!-- END .feed-back-popup -->
   <script src="js/script.js"></script>
 </body>
