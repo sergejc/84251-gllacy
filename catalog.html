@@ -116,7 +116,7 @@
   <main class="container">
     <h1>Сливочное мороженое</h1>
     <form class="filters" action="#" method="get">
-      <fieldset disabled="disabled">
+      <fieldset>
         <legend class="visually-hidden">Фильтры товаров</legend>
         <div class="filters__sort-order">
           <label for="sort">Сортировка:</label>
@@ -128,10 +128,11 @@
           </select>
         </div><!-- END .filters__sort-order -->
         <div class="filters__price">
-          <label for="filters__price">Цена: 100 руб. – 500 руб.</label>
-          <input id="filters__price" type="range" min=100 max=500 name="price">
+            <h2>Цена: 100 руб. – 500 руб.</h2>
+            <div id="filters__price-range"></div>
         </div><!-- END .filters__price -->
-        <div class="filters__fat-percentage">
+        <div class="filters__fat-percentage fat-percentage">
+          <h2 class="fat-percentage__header">Жирность:</h2>
           <label for="percentage0">0%</label>
           <input id="percentage0" type="radio" name="percentage" value="0">
           <label for="percentage10">до 10%</label>
@@ -141,7 +142,8 @@
           <label for="percentage31">выше 30%</label>
           <input id="percentage31" type="radio" name="percentage" value="31">
         </div><!-- END .filters__percentage -->
-        <div class="filters__ingredients">
+        <div class="filters__ingredients ingredients">
+          <h2 class="ingredients__header">Жирность:</h2>
           <label for="chocolate">шоколадные</label>
           <input id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">
           <label for="sugar">сахарные присыпки</label>
