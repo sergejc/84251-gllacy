@@ -82,15 +82,17 @@
   <main class="container">
     <h1 class="visually-hidden">Магазин GllacyShop</h1>
     <div class="slider">
-      <!-- одинаковые value ?-->
-      <div class="slider__nav">
-        <input id="slider__icecream1" class="visually-hidden" type="radio" name="icecream" value="icecream1">
-        <label for="slider__icecream1"><span class="visually-hidden">Слайд 1</span></label>
-        <input id="slider__icecream2" class="visually-hidden" type="radio" name="icecream" value="icecream2">
-        <label for="slider__icecream2"><span class="visually-hidden">Слайд 2</span></label>
-        <input id="slider__icecream3" class="visually-hidden" type="radio" name="icecream" value="icecream3">
-        <label for="slider__icecream3"><span class="visually-hidden">Слайд 3</span></label>
-      </div>
+      <ul class="slider__nav">
+        <li class="slider__radio">
+          <button class="slider__btn" type="button">Первый слайд</button>
+        </li>
+        <li class="slider__radio">
+          <button class="slider__btn" type="button">Второй слайд</button>
+        </li>
+        <li class="slider__radio">
+          <button class="slider__btn" type="button">Третий слайд</button>
+        </li>
+      </ul>
       <div class="slider__item">
         <figure class="slider__image">
           <img src="http://placehold.it/700x570" alt="Крем-брюле и пломбир с малиновым джемом" width="700" height="570">
