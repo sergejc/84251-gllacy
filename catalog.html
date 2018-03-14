@@ -129,7 +129,18 @@
         </div><!-- END .filters__sort-order -->
         <div class="filters__price">
             <h2>Цена: 100 руб. – 500 руб.</h2>
-            <div id="filters__price-range"></div>
+            <div class="filters__price-range">
+              <span class="filter__price-min" role="slider" aria-valuenow="100" aria-valuemin="1" aria-valuemax="1000"></span>
+              <span class="filter__price-max" role="slider" aria-valuenow="500" aria-valuemin="1" aria-valuemax="1000"></span>
+            </div>
+            <label class="visually-hidden">
+                Минимальная цена
+              <input type="hidden" name="price-min">
+            </label>
+            <label class="visually-hidden">
+                Максимальная цена
+              <input type="hidden" name="price-max">
+            </label>
         </div><!-- END .filters__price -->
         <div class="filters__fat-percentage fat-percentage">
           <h2 class="fat-percentage__header">Жирность:</h2>
