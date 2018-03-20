@@ -1,7 +1,166 @@
-body {
-    background-color: #99aea2;
+/**
+* General
+*/
+* {
+    box-sizing: border-box;
 }
 
-.hidden {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.site-wrapper {
+    background-color: #849d8f;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 900px;
+}
+
+/***********************************
+* Header
+*/
+*/
+.main-header {
+    padding-top: 10px;
+}
+
+.main-header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+* Logo
+*/
+.main-nav {
+    display: flex;
+    align-content: center;
+}
+
+.main-nav__logo {
+    width: 155px;
+    height: 70px;
+}
+
+/**
+* Site navigation
+*/
+.site-nav, 
+.catalog-menu,
+.user-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav {
+    width: 400px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.site-nav__link {
+    color: #fff;
+}
+
+.site-nav__item:nth-of-type(1) {
+    margin-left: 25px;
+}
+
+.site-nav__item:nth-of-type(2) {
+    margin-left: 27px;
+}
+
+.site-nav__item:nth-of-type(3) {
+    margin-left: 29px;
+}
+
+/**
+* User navigation
+*/
+.user-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-nav__item:nth-of-type(2) {
+    margin: 0 10px;
+}
+
+/**
+* TODO to be removed
+*/
+.user-nav__item {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+.user-nav__item * {
+    display: none;
+}
+
+/**
+* Contacts
+*/
+.contacts {
+    color: #fff;
+    align-self: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.contacts__work-time {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.contacts__phone-num {
+    font-size: 22px;
+    margin: 0;
+}
+
+/***********************************
+* Main
+*/
+.slider {
+    position: relative;
+    height: 900px;
+    margin-top: -120px;
+}
+
+.slider figure {
+    margin: 0;
+    padding: 0;
+}
+
+.slider__nav {
+    position: absolute;
+    bottom: 20px
+}
+
+.slider__item {
+    position: absolute;
+    top: 0;
+}
+
+.slider__item:nth-of-type(1) {
+    display: block;
+}
+
+.slider__item:nth-of-type(2) {
+    display: none;
+}
+
+.slider__item:nth-of-type(3) {
     display: none;
 }
