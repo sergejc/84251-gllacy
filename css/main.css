@@ -200,8 +200,8 @@ body {
 .promotions {
     display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin-bottom: 0 0 40px 0;
 }
 
 .promotion__item {
@@ -247,4 +247,50 @@ body {
 
 .promotion__item--chocolate {
     background: url('../img/banner2.jpg') no-repeat;
+}
+
+/**
+* Bestsellers
+*/
+.best-sellers__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.best-sellers__item {
+    width: 200px;
+    position: relative;
+}
+
+.best-sellers__item::before {
+    content: "";
+    width: 65px;
+    height: 65px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    background: url('../img/hit.svg') no-repeat;
+    z-index: 1;
+}
+
+.best-sellers__image {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.best-sellers__price {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 120px;
+}
+
+.best-sellers__link {
+    color: #fff;
+    font-size: 16px;
 }
