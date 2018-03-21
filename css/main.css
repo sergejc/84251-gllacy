@@ -201,7 +201,7 @@ body {
     display: flex;
     list-style: none;
     padding: 0;
-    margin-bottom: 0 0 40px 0;
+    margin: 0 0 40px 0;
 }
 
 .promotion__item {
@@ -255,7 +255,7 @@ body {
 .best-sellers__list {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 0 40px 0;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -294,3 +294,25 @@ body {
     color: #fff;
     font-size: 16px;
 }
+
+/**
+* Shop-info
+*/
+.shop-info__items {
+    background: url('../img/waffles.jpg');
+    border-radius: 20px;
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop-info__header {
+    font-size: 24px;
+}
+
+.shop-info__item {
+    width: 400px;
+    padding: 10px 10px 10px 50px;
+}
+
