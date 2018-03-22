@@ -31,6 +31,7 @@ body {
     padding: 15px 40px;
     background-color: #f16542;
     border-radius: 35px;
+    display: block;
 }
 
 /**
@@ -421,9 +422,64 @@ body {
     background-color: #fff;
     border-radius: 25px;
     padding: 30px 25px;
+    width: 305px;
+    height: 305px;
 }
 
 .feed-back__title {
     font-size: 14px;
     color: #323232;
+    font-weight: normal;
+}
+
+.feed-back__address {
+    font-size: 18px;
+    font-weight: bold; 
+    font-style: normal;
+}
+
+.feed-back__phone-text {
+    font-size: 14px;
+    color: #323232;
+    margin-bottom: 25px;
+}
+
+.feed-back__phone {
+    font-size: 18px;
+    color: #323232;
+    font-weight : bold;
+    text-decoration: none; 
+}
+
+/**
+* Footer
+*/
+.main-footer {
+    padding: 20px;
+    display: flex;
+}
+
+.social {
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social__item {
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+.about-us {
+    width: 420px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.copyright {
+    width: 200px;
 }
