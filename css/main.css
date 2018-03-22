@@ -298,6 +298,10 @@ body {
 /**
 * Shop-info
 */
+.shop-info {
+    margin-bottom: 40px;
+}
+
 .shop-info__items {
     background: url('../img/waffles.jpg');
     border-radius: 20px;
@@ -343,4 +347,53 @@ body {
 
 .shop-info__item:nth-of-type(4)::after {
     background: url('../img/thermometer.svg') no-repeat;
+}
+
+/**
+* Info block
+*/
+.info-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-block__header {
+    font-size: 16px;
+    color: #5a5a5a;
+    margin: 0;
+}
+
+.news__header {
+    color: #353535;
+    font-size: 24px;
+}
+
+.news,
+.subscribe {
+    width: 420px;
+    height: 220px;
+    border-radius: 25px;
+}
+
+.news {
+    padding: 30px 110px 30px 20px;
+    background: url('../img/news.jpg') no-repeat;
+}
+
+.subscribe {
+    background: url('../img/mail.png') no-repeat;
+    padding: 5px;
+}
+
+.subscribe__container {
+    padding: 35px 25px 40px 25px;
+    background-color: #f8f7f4;
+    border-radius: 25px;
+    min-height: 100%;
+}
+
+.subscribe__text {
+    color: #5a5a5a;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
