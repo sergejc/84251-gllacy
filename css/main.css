@@ -309,10 +309,38 @@ body {
 
 .shop-info__header {
     font-size: 24px;
+    margin: 0 0 15px 0;
 }
 
 .shop-info__item {
     width: 400px;
-    padding: 10px 10px 10px 50px;
+    padding: 20px 0 0 60px;
+    margin: 0;
+    position: relative;
 }
 
+.shop-info__item:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.shop-info__item:nth-of-type(1)::after {
+    background: url('../img/icecream.svg') no-repeat;
+}
+
+.shop-info__item:nth-of-type(2)::after {
+    background: url('../img/cow.svg') no-repeat;
+}
+
+.shop-info__item:nth-of-type(3)::after {
+    background: url('../img/leaf.svg') no-repeat;
+}
+
+.shop-info__item:nth-of-type(4)::after {
+    background: url('../img/thermometer.svg') no-repeat;
+}
