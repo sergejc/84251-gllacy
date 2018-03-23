@@ -465,21 +465,43 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .social__item {
     width: 35px;
     height: 35px;
-    display: none;
+    background-color: red;
 }
 
 .about-us {
-    width: 420px;
+    width: 440px;
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us__link {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .copyright {
     width: 200px;
+    color: #fefefe;
+    font-size: 12px;
+    text-align: right;
+}
+
+.copyright__text {
+    text-align: right;
+}
+
+.copyright__link {
+    color: #fefefe;
+    font-size: 12px;
 }
