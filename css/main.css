@@ -284,6 +284,10 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #adacaa;
 }
 
+.shoping-card {
+    position: relative;
+}
+
 .shopping-card__quantity {
     color: #fff;
     background-color: rgb(255, 255, 255, 0.2);
@@ -305,6 +309,109 @@ input[type="radio"].visually-hidden {
     width: 26px;
     height: 22px;;
 }
+
+.shopping-card__form {
+    position: absolute;
+    width: 540px;
+    right: 0;
+    top: 39px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+}
+
+.shopping-card__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 20px 15px
+}
+
+.shopping-card__item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.shopping-card__item:last-of-type {
+    border-bottom: 1px solid #cacac7;
+    padding-bottom: 20px;
+}
+
+
+.shopping-card__item-remove {
+    width: 13px;
+    height: 13px;
+    background-color: #f8f7f4;
+    border: 0;
+    margin-right: 10px;
+    position: relative;
+}
+
+.shopping-card__item-remove:before,  .shopping-card__item-remove:after  { 
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 0;
+    width: 13px;
+    height: 2px;;
+    background-color: #000;
+}
+
+.shopping-card__item-remove:before {
+    transform: rotate(45deg);
+}
+
+.shopping-card__item-remove:after  { 
+    transform: rotate(-45deg);
+}
+
+.shopping-card__item-description {
+    width: 220px;
+    margin-right: 30px;
+}
+
+.shopping-card__item-img {
+    margin-right: 13px;
+}
+
+.shopping-card__item-price-weight {
+    width: 100px;
+    margin-right: 25px;
+}
+
+.shopping-card__item-price-weight--rub {
+    color: #999;
+}
+
+.shopping-card__total {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 18px;
+    color: #323232;
+
+}
+
+.shoping-card__totals {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.shoping-card__total {
+    margin-bottom: 15px;
+}
+
+.shopping-card__order {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 9px 16px;
+}
+
 
 /**
 * Contacts
