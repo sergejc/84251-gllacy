@@ -1094,6 +1094,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     position: relative;
     margin-bottom: 35px;
+    position: relative;
 }
 
 .product__img {
@@ -1119,8 +1120,26 @@ input[type="radio"].visually-hidden {
     margin-bottom: 15px;
 }
 
+.product__lightbox {
+    position: absolute;
+    width: 293px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin-left: -13px;
+    top: -10px;
+    border-radius: 10px;
+    height: 125%;
+}
+
 .product__quick-view {
-    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 16%;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    padding: 11px 18px;
+    border: 0;
 }
 
 /**
