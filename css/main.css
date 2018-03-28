@@ -1077,6 +1077,32 @@ input[type="radio"].visually-hidden {
     margin-bottom: 40px;
 }
 
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filters__sort-order {
+    width: 193px;
+}
+
+.filters__price {
+    width: 220px;
+}
+
+.filters__fat-percentage {
+    width: 411px;
+}
+
+.filters__ingredients {
+    width: 700px;
+}
+
+.filter__apply {
+    width: 137px;
+}
+
 /**
 * Products
 */

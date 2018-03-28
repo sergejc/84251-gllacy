@@ -177,8 +177,8 @@
         <main class="container">
             <h1 class="catalog-header">Сливочное мороженое</h1>
             <form class="filters" action="#" method="get">
-                <fieldset>
-                    <legend class="visually-hidden">Фильтры товаров</legend>
+                <div class="filters-container">
+                    <h2 class="visually-hidden">Фильтры товаров</h2>
                     <div class="filters__sort-order">
                         <label for="sort">Сортировка:</label>
                         <select id="sort" name="sort">
@@ -232,7 +232,7 @@
                     </div>
                     <!-- END .filters__ingredients -->
                     <button class="filter__apply">Применить</button>
-                </fieldset>
+                </div>
             </form>
             <!-- END .filter -->
             <section class="products">
