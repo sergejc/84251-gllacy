@@ -207,18 +207,20 @@
                     <!-- END .filters__price -->
                     <div class="filters__fat-percentage fat-percentage">
                         <h2 class="fat-percentage__header">Жирность:</h2>
-                        <label for="percentage0">0%</label>
-                        <input id="percentage0" type="radio" name="percentage" value="0">
-                        <label for="percentage10">до 10%</label>
-                        <input id="percentage10" type="radio" name="percentage" value="10">
-                        <label for="percentage30">до 30%</label>
-                        <input id="percentage30" type="radio" name="percentage" value="30">
-                        <label for="percentage31">выше 30%</label>
-                        <input id="percentage31" type="radio" name="percentage" value="31">
+                        <div class="fat-percentage__container">
+                            <input class="fat-percentage__radio visually-hidden" id="percentage0" type="radio" name="percentage" value="0">
+                            <label class="fat-percentage__label" for="percentage0">0%</label>
+                            <input class="fat-percentage__radio visually-hidden" id="percentage10" type="radio" name="percentage" value="10" checked>
+                            <label class="fat-percentage__label" for="percentage10">до 10%</label>
+                            <input class="fat-percentage__radio visually-hidden" id="percentage30" type="radio" name="percentage" value="30">
+                            <label class="fat-percentage__label" for="percentage30">до 30%</label>
+                            <input class="fat-percentage__radio visually-hidden" id="percentage31" type="radio" name="percentage" value="31">
+                            <label class="fat-percentage__label"for="percentage31">выше 30%</label>
+                        </div>
                     </div>
                     <!-- END .filters__percentage -->
                     <div class="filters__ingredients ingredients">
-                        <h2 class="ingredients__header">Жирность:</h2>
+                        <h2 class="ingredients__header">Наполнители:</h2>
                         <label for="chocolate">шоколадные</label>
                         <input id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">
                         <label for="sugar">сахарные присыпки</label>

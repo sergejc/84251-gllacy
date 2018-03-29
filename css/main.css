@@ -1081,9 +1081,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 880px;
 }
-
-
 
 .filters__fat-percentage {
     width: 411px;
@@ -1109,13 +1108,19 @@ input[type="radio"].visually-hidden {
     color: #fff;
     font-size: 14px;
     line-height: 16px;
+    margin: 0 0 7px 25px;
+    display: block;
 }
 
 .filter__sort-select {
     font-size: 16px;
     line-height: 18px;
     color: #323232;
-    padding: 9px 50px 9px 16px;
+    padding: 9px 30px 9px 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 20px;
 }
 
 /**
@@ -1183,6 +1188,46 @@ input[type="radio"].visually-hidden {
     margin: 0 0 7px 25px;
 }
 
+.fat-percentage__container {
+    background: rgb(255, 255, 255, 0.2);
+    width: 100%;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 9px 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fat-percentage__label {
+    padding-left: 35px;
+    position: relative;
+}
+
+.fat-percentage__label::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    top: -3px;
+    left: 4px;
+}
+
+.fat-percentage__radio:checked + .fat-percentage__label::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 10px;
+}
 
 
 /**
