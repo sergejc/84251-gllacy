@@ -221,19 +221,23 @@
                     <!-- END .filters__percentage -->
                     <div class="filters__ingredients ingredients">
                         <h2 class="ingredients__header">Наполнители:</h2>
-                        <label for="chocolate">шоколадные</label>
-                        <input id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">
-                        <label for="sugar">сахарные присыпки</label>
-                        <input id="sugar" type="checkbox" name="ingredients[]" value="сахарные присыпки">
-                        <label for="fruits">фрукты</label>
-                        <input id="fruits" type="checkbox" name="ingredients[]" value="фрукты">
-                        <label for="sirope">сиропы</label>
-                        <input id="sirope" type="checkbox" name="ingredients[]" value="сиропы">
-                        <label for="jam">джемы</label>
-                        <input id="jam" type="checkbox" name="ingredients[]" value="джемы">
+                        <div class="ingredients__container">
+                            <input class="ingredients__checkbox visually-hidden" id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">
+                            <label class="ingredients__label" for="chocolate">шоколадные</label>
+                            <input class="ingredients__checkbox visually-hidden" id="sugar" type="checkbox" name="ingredients[]" value="сахарные присыпки">
+                            <label class="ingredients__label" for="sugar">сахарные присыпки</label>
+                            <input class="ingredients__checkbox visually-hidden" id="fruits" type="checkbox" name="ingredients[]" value="фрукты">
+                            <label class="ingredients__label" for="fruits">фрукты</label>
+                            <input class="ingredients__checkbox visually-hidden" id="sirope" type="checkbox" name="ingredients[]" value="сиропы">
+                            <label class="ingredients__label" for="sirope">сиропы</label>
+                            <input class="ingredients__checkbox visually-hidden" id="jam" type="checkbox" name="ingredients[]" value="джемы">
+                            <label class="ingredients__label" for="jam">джемы</label>
+                        </div>
                     </div>
                     <!-- END .filters__ingredients -->
-                    <button class="filter__apply">Применить</button>
+                    <div class="filter__apply-container">
+                        <button class="filter__apply">Применить</button>
+                    </div>
                 </div>
             </form>
             <!-- END .filter -->

@@ -1077,19 +1077,18 @@ input[type="radio"].visually-hidden {
     margin-bottom: 40px;
 }
 
+.filters__fat-percentage,
+.filters__price,
+.filters__fat-percentage,
+.filters__ingredients {
+    margin-bottom: 15px;
+}
+
 .filters-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 880px;
-}
-
-.filters__fat-percentage {
-    width: 411px;
-}
-
-.filters__ingredients {
-    width: 700px;
 }
 
 .filter__apply {
@@ -1099,7 +1098,6 @@ input[type="radio"].visually-hidden {
 /**
 * Sort
 */
-
 .filters__sort-order {
     width: 193px;
 }
@@ -1126,7 +1124,6 @@ input[type="radio"].visually-hidden {
 /**
 * Range
 */
-
 .filters__price {
     width: 220px;
 }
@@ -1181,6 +1178,10 @@ input[type="radio"].visually-hidden {
 /**
 * Fat percentage
 */
+.filters__fat-percentage {
+    width: 411px;
+}
+
 .fat-percentage__header {
     color: #fff;
     font-size: 14px;
@@ -1227,6 +1228,59 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
     top: 2px;
     left: 10px;
+}
+
+/**
+* Ingredients
+*/
+.filters__ingredients {
+    width: 700px;
+}
+
+.ingredients__header {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 7px 25px;
+}
+
+.ingredients__container {
+    background: rgb(255, 255, 255, 0.2);
+    width: 100%;
+    border-radius: 20px;
+    padding: 9px 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients__label {
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 35px;
+}
+
+/**
+* Filter applie
+*/
+.filter__apply-container {
+    position: relative;
+    flex-grow: 1;
+}
+
+.filter__apply  {
+    position: absolute;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 2px solid #f6f8f7;
+    border-radius: 20px;
+    padding: 7px 20px;
+    top: 21px;
+    left: 44px;
 }
 
 
