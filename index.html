@@ -24,10 +24,10 @@
                 <path d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z" />
             </symbol>
             <symbol id="icon-shopping-card">
-                <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+                <path d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
                                  L17.372,13z" />
-                <circle fill="#FFFFFF" cx="6.984" cy="18" r="2" />
-                <circle fill="#FFFFFF" cx="15.984" cy="18" r="2" />
+                <circle cx="6.984" cy="18" r="2" />
+                <circle cx="15.984" cy="18" r="2" />
             </symbol>
         </defs>
     </svg>
@@ -38,10 +38,10 @@
                     <img class="main-nav__logo" src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
                     <ul class="site-nav">
                         <li class="site-nav__item site-nav__item--active">
-                            <a class="site-nav__link" href="catalog.html">Каталог</a>
+                            <a class="site-nav__link" href="catalog.html"><span class="site-nav__link-text">Каталог</span></a>
                             <ul class="catalog-menu">
                                 <li class="catalog__item">
-                                    <a class="catalog__link" href="#">Новинки</a>
+                                    <a class="catalog__link-top" href="#">Новинки</a>
                                 </li>
                                 <li class="catalog__item">
                                     <a class="catalog__link"  href="#">Сливочное</a>
@@ -60,10 +60,10 @@
                         </li>
                         <!-- .END site-nav__menu-item -->
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="#">Доставка и оплата</a>
+                            <a class="site-nav__link" href="#"><span class="site-nav__link-text">Доставка и оплата</span></a>
                         </li>
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="#">О Компании</a>
+                            <a class="site-nav__link" href="#"><span class="site-nav__link-text">О Компании</span></a>
                         </li>
                     </ul>
                     <!-- END .site-nav -->
@@ -73,7 +73,7 @@
                                 <span class="visually-hidden">Открыть модальное окно поиска</span>
                                 <svg class="icon-search" width="17px" height="17px"><use xlink:href="#icon-search"></use></svg>
                             </a>
-                            <div class="user-nav__search-form visually-hidden">
+                            <div class="user-nav__search-form">
                                 <form action="#" class="site-search" method="get">
                                     <label for="site-search__input" class="visually-hidden">Поиск по сайту</label>
                                     <input class="site-search__input" id="site-search__input" type="text" placeholder="Что ищем?" name="search">
@@ -95,7 +95,9 @@
                                     <label for="user-nav__password" class="visually-hidden">Пароль</label>
                                     <input class="user-nav__password" id="user-nav__password" type="password" name="password" placeholder="Пароль">
                                     <div class="user-nav__action">
-                                        <button class="user-nav__send button user-nav__send--button" type="submit">Войти</button>
+                                        <div>
+                                            <button class="user-nav__send button user-nav__send--button" type="submit">Войти</button>
+                                        </div>
                                         <div class="user-nav__links">
                                             <a class="user-nav__link" href="#">Забыли пароль?</a>
                                             <a class="user-nav__link" href="#">Новая регистрация</a>
@@ -109,8 +111,11 @@
                         <!-- END .user-nav__item -->
                         <li class="user-nav__item">
                             <div class="shopping-card">
-                                <button class="shopping-card__quantity" data-shopping-card-text="Пусто">Пусто</button>
-                                <svg class="icon-shopping-card"><use xlink:href="#icon-shopping-card"></use></svg>
+                                <button class="shopping-card__quantity" data-shopping-card-text="Пусто">Пусто
+                                    <svg class="icon-shopping-card">
+                                        <use xlink:href="#icon-shopping-card"></use>
+                                    </svg>
+                                </button>
                             </div>
                             <!-- END .shopping-card -->
                         </li>
@@ -294,12 +299,12 @@
             <!-- END .social -->
             <div class="about-us">
                 <div class="about-us__column">
-                    <a class="about-us__link" href="#">Для поставщиков</a>
-                    <a class="about-us__link"  href="#">О производстве</a>
+                    <a class="about-us__link" href="#"><span class="about-us__text">Для поставщиков</span></a>
+                    <a class="about-us__link"  href="#"><span class="about-us__text">О производстве</span></a>
                 </div>
                 <div class="about-us__column">
-                    <a class="about-us__link"  href="#">Наши документы</a>
-                    <a class="about-us__link"  href="#">Экологические стандарты</a>
+                    <a class="about-us__link"  href="#"><span class="about-us__text">Наши документы</span></a>
+                    <a class="about-us__link"  href="#"><span class="about-us__text">Экологические стандарты</span></a>
                 </div>
             </div>
             <!-- END .about-us -->
