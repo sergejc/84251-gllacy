@@ -132,6 +132,7 @@ input[type="radio"].visually-hidden {
     color: #fff;
     text-decoration: none;
     padding: 7px 13px;
+    border-radius: 25px;
 }
 
 .site-nav__link-text {
@@ -146,7 +147,6 @@ input[type="radio"].visually-hidden {
     color: #323232;
     background-color: rgba(248, 247, 244, 0.988);
     padding: 7px 13px;
-    border-radius: 25px;
     text-decoration: none;
 }
 
@@ -954,6 +954,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0;
 }
 
 .social__item {
@@ -972,6 +973,15 @@ input[type="radio"].visually-hidden {
 
 .social__link {
     display: inline-block;
+    opacity: 0.8;
+}
+
+.social__link:hover {
+    opacity: 1;
+}
+
+.social__link:active {
+    opacity: 1;
 }
 
 .about-us {
@@ -1176,6 +1186,11 @@ input[type="radio"].visually-hidden {
 
 .bread-crumbs__link {
     border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.bread-crumbs__link:hover,
+.bread-crumbs__link:active {
+    color: #ffbc9e;
 }
 
 .bread-crumbs__link::after {
@@ -1430,6 +1445,16 @@ input[type="radio"].visually-hidden {
     left: 44px;
 }
 
+.filter__apply:hover,
+ .filter__apply:hover {
+    color: #323232;
+    background-color: #fff;
+}
+
+ .filter__apply:active {
+    box-shadow: inset 0 2px 1px #696969;
+}
+
 
 /**
 * Products
@@ -1472,6 +1497,12 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     border-bottom: 1px solid #9db1a5;
     margin-bottom: 15px;
+}
+
+.product__link:hover, 
+.product__link:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
 }
 
 .product__lightbox {
@@ -1518,16 +1549,19 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     font-size: 16px;
     line-height: 22px;
-}
-
-.pagination__link {
     padding: 2px 9px;
+    border-radius: 50%;
 }
 
-.pagination__link--active {
+.pagination__link:hover {
+    color: #fff;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.pagination__link--active,
+.pagination__link:active {
     color: #353535;
     background-color: #fff;
-    border-radius: 50%;
 }
 
 .pagination__prev,
