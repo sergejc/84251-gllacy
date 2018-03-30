@@ -106,6 +106,7 @@ input[type="radio"].visually-hidden {
 .site-nav {
     width: 400px;
     font-size: 16px;
+    line-height: 18px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -139,6 +140,7 @@ input[type="radio"].visually-hidden {
     width: 143px;
     position: absolute;
     font-size: 14px;
+    line-height: 16px;
     background-color: #f8f7f4;
     top: 30px;
     border-radius: 5px;
@@ -203,6 +205,10 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     width: 35px;
     height: 35px;
+}
+
+.user-nav__search:active {
+    outline-color: rgb(59, 153, 252);
 }
 
 .icon-search {
