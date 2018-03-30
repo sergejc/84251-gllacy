@@ -201,14 +201,11 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav__search {
-    opacity: 0.2;
     border-radius: 50%;
     width: 35px;
     height: 35px;
-}
-
-.user-nav__search:active {
-    outline-color: rgb(59, 153, 252);
+    display: inline-block;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 .icon-search {
