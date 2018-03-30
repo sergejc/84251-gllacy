@@ -232,12 +232,12 @@ input[type="radio"].visually-hidden {
 .user-nav__registration {
     padding: 8px 11px 8px 40px;
     font-size: 16px;
-    color: #323232;
+    color: #fff;
     border-radius: 20px;
     background-color: rgb(255, 255, 255, 0.2);
 }
-
 .user-nav__registration--active {
+    color: #323232;
     background-color: #f7f6f3
 }
 
@@ -245,7 +245,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 7px;
     left: 16px;
-    color: #323232;
+    fill: #fff;
 }
 
 .user-nav__login {
@@ -256,6 +256,7 @@ input[type="radio"].visually-hidden {
     padding: 20px 17px 20px 19px;
     background-color: #f8f7f4;
     border-radius: 5px;
+    color: #fff;
 }
 
 .user-nav__fieldset {
@@ -1113,12 +1114,19 @@ input[type="radio"].visually-hidden {
 .filter__sort-select {
     font-size: 16px;
     line-height: 18px;
-    color: #323232;
+    color: #fff;
     padding: 9px 30px 9px 16px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     border-radius: 20px;
+    position: relative;
+    background: url(../img/icon-down-dir.svg) no-repeat 166px 13px;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.filter__sort-select:acitve {
+    color: #323232;
 }
 
 /**
@@ -1259,6 +1267,24 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 18px;
     padding-left: 35px;
+    position: relative;
+}
+
+.ingredients__label::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    display: block;
+    background: url(../img/checkbox-off.svg) no-repeat;
+    left: 0px;
+    top: -2px;
+    opacity: 0.8;
+}
+
+.ingredients__checkbox:checked + .ingredients__label::before {
+    background: url(../img/checkbox-on.svg) no-repeat;
+    height: 27px;
 }
 
 /**
