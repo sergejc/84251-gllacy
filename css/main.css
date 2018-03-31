@@ -178,10 +178,6 @@ input[type="radio"].visually-hidden {
     border: 0;
 }
 
-.site-nav__item:hover .catalog-menu {
-    display: block;
-}
-
 .catalog-menu {
     width: 143px;
     position: absolute;
@@ -192,9 +188,15 @@ input[type="radio"].visually-hidden {
     top: 30px;
     left: -8px;
     border-radius: 5px;
-    z-index: 1;
+    z-index: 2;
     padding-bottom: 8px;
     display: none;
+}
+
+.site-nav__item:hover .catalog-menu,
+ .site-nav__item--acitve .catalog-menu
+{
+    display: block;
 }
 
 .catalog__link-top,
@@ -678,7 +680,11 @@ input[type="radio"].visually-hidden {
 }
 
 .promotion__item:first-child {
-    margin-right: 26px;
+    margin-right: 1.1%;
+}
+
+.promotion__item:last-child {
+    margin-left: 1.1%;
 }
 
 .promotion__header,
