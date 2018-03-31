@@ -17,6 +17,7 @@ document.querySelectorAll('.slider__label').forEach(function (el) {
     });
 });
 
+/*
 document.querySelectorAll('.site-nav__link').forEach(function(el) {
     el.addEventListener('mouseenter', function (e) {
         e.target.closest('.site-nav__item').classList.add('site-nav__item--active');
@@ -41,3 +42,4 @@ document.querySelectorAll('.user-nav__search, .user-nav__registration, .shopping
         }, 300);
     });
 });
+*/
