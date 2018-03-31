@@ -205,8 +205,8 @@
                     <div class="filters__price">
                         <h2 class="filters__price-header">Цена: 100 руб. – 500 руб.</h2>
                         <div class="filters__price-range">
-                            <span class="filter__price-min" role="slider" aria-valuenow="100" aria-valuemin="1" aria-valuemax="1000"></span>
-                            <span class="filter__price-max" role="slider" aria-valuenow="500" aria-valuemin="1" aria-valuemax="1000"></span>
+                            <span class="filter__price-min" role="slider" aria-valuenow="100" aria-valuemin="1" aria-valuemax="1000" tabindex="0"></span>
+                            <span class="filter__price-max" role="slider" aria-valuenow="500" aria-valuemin="1" aria-valuemax="1000" tabindex="0"></span>
                         </div>
                         <label class="visually-hidden">
                             Минимальная цена
@@ -221,30 +221,30 @@
                     <div class="filters__fat-percentage fat-percentage">
                         <h2 class="fat-percentage__header">Жирность:</h2>
                         <div class="fat-percentage__container">
-                            <input class="fat-percentage__radio visually-hidden" id="percentage0" type="radio" name="percentage" value="0">
-                            <label class="fat-percentage__label" for="percentage0">0%</label>
-                            <input class="fat-percentage__radio visually-hidden" id="percentage10" type="radio" name="percentage" value="10" checked>
-                            <label class="fat-percentage__label" for="percentage10">до 10%</label>
-                            <input class="fat-percentage__radio visually-hidden" id="percentage30" type="radio" name="percentage" value="30">
-                            <label class="fat-percentage__label" for="percentage30">до 30%</label>
-                            <input class="fat-percentage__radio visually-hidden" id="percentage31" type="radio" name="percentage" value="31">
-                            <label class="fat-percentage__label" for="percentage31">выше 30%</label>
+                            <input class="fat-percentage__radio visually-hidden" id="percentage0" type="radio" name="percentage" value="0" tabindex="-1">
+                            <label class="fat-percentage__label" for="percentage0" tabindex="0">0%</label>
+                            <input class="fat-percentage__radio visually-hidden" id="percentage10" type="radio" name="percentage" value="10" tabindex="-1" checked>
+                            <label class="fat-percentage__label" for="percentage10" tabindex="0">до 10%</label>
+                            <input class="fat-percentage__radio visually-hidden" id="percentage30" type="radio" name="percentage" value="30" tabindex="-1">
+                            <label class="fat-percentage__label" for="percentage30" tabindex="0">до 30%</label>
+                            <input class="fat-percentage__radio visually-hidden" id="percentage31" type="radio" name="percentage" value="31" tabindex="-1">
+                            <label class="fat-percentage__label" for="percentage31" tabindex="0">выше 30%</label>
                         </div>
                     </div>
                     <!-- END .filters__percentage -->
                     <div class="filters__ingredients ingredients">
                         <h2 class="ingredients__header">Наполнители:</h2>
                         <div class="ingredients__container">
-                            <input class="ingredients__checkbox visually-hidden" id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные">
-                            <label class="ingredients__label" for="chocolate">шоколадные</label>
-                            <input class="ingredients__checkbox visually-hidden" id="sugar" type="checkbox" name="ingredients[]" value="сахарные присыпки">
-                            <label class="ingredients__label" for="sugar">сахарные присыпки</label>
-                            <input class="ingredients__checkbox visually-hidden" id="fruits" type="checkbox" name="ingredients[]" value="фрукты">
-                            <label class="ingredients__label" for="fruits">фрукты</label>
-                            <input class="ingredients__checkbox visually-hidden" id="sirope" type="checkbox" name="ingredients[]" value="сиропы">
-                            <label class="ingredients__label" for="sirope">сиропы</label>
-                            <input class="ingredients__checkbox visually-hidden" id="jam" type="checkbox" name="ingredients[]" value="джемы">
-                            <label class="ingredients__label" for="jam">джемы</label>
+                            <input class="ingredients__checkbox visually-hidden" id="chocolate" type="checkbox" name="ingredients[]" value="шоколадные" tabindex="-1">
+                            <label class="ingredients__label" for="chocolate" tabindex="0">шоколадные</label>
+                            <input class="ingredients__checkbox visually-hidden" id="sugar" type="checkbox" name="ingredients[]" value="сахарные присыпки" tabindex="-1">
+                            <label class="ingredients__label" for="sugar" tabindex="0">сахарные присыпки</label>
+                            <input class="ingredients__checkbox visually-hidden" id="fruits" type="checkbox" name="ingredients[]" value="фрукты" tabindex="-1">
+                            <label class="ingredients__label" for="fruits" tabindex="0">фрукты</label>
+                            <input class="ingredients__checkbox visually-hidden" id="sirope" type="checkbox" name="ingredients[]" value="сиропы" tabindex="-1">
+                            <label class="ingredients__label" for="sirope" tabindex="0">сиропы</label>
+                            <input class="ingredients__checkbox visually-hidden" id="jam" type="checkbox" name="ingredients[]" value="джемы" tabindex="-1">
+                            <label class="ingredients__label" for="jam" tabindex="0">джемы</label>
                         </div>
                     </div>
                     <!-- END .filters__ingredients -->

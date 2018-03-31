@@ -1395,6 +1395,7 @@ input[type="radio"].visually-hidden {
 .fat-percentage__label {
     padding-left: 35px;
     position: relative;
+    outline: none;
 }
 
 .fat-percentage__label::before {
@@ -1407,6 +1408,14 @@ input[type="radio"].visually-hidden {
     border: 2px solid #fff;
     top: -3px;
     left: 4px;
+}
+
+.fat-percentage__label:focus:before {
+    border-image-outset: 0px ;
+    outline-color: rgb(59, 153, 252);
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
 }
 
 .fat-percentage__radio:checked + .fat-percentage__label::after {
@@ -1451,6 +1460,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     padding-left: 35px;
     position: relative;
+    outline: none;
 }
 
 .ingredients__label::before {
@@ -1463,6 +1473,14 @@ input[type="radio"].visually-hidden {
     left: 0px;
     top: -2px;
     opacity: 0.8;
+}
+
+.ingredients__label:focus::before {
+    border-image-outset: 0px ;
+    outline-color: rgb(59, 153, 252);
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
 }
 
 .ingredients__checkbox:checked + .ingredients__label::before {
