@@ -17,16 +17,19 @@ img {
 .site-wrapper-background1 {
     background: url('../img/icecream1-banner.png') no-repeat top center;
     background-color: #849d8f;
+    transition: background-image .5s ease,background-color .5s ease;
 }
 
 .site-wrapper-background2 {
     background: url('../img/icecream2-banner.png') no-repeat top center;
     background-color: #8996a6;
+    transition: background-image .5s ease,background-color .5s ease;
 }
 
 .site-wrapper-background3 {
     background: url('../img/icecream3-banner.png') no-repeat top center;
     background-color: #9d8b84;
+    transition: background-image .5s ease,background-color .5s ease;
 }
 
 .site-wrapper-catalog {
@@ -172,7 +175,7 @@ input[type="radio"].visually-hidden {
     border: 0;
 }
 
-.site-nav__link:active + .catalog-menu {
+.site-nav__item:hover .catalog-menu {
     display: block;
 }
 
