@@ -197,7 +197,7 @@
                     <div class="filters__sort-order">
                         <label class="filter__sort-label" for="sort">Сортировка:</label>
                         <select class="filter__sort-select" id="sort" name="sort">
-                            <option value="popularity">по популярности</option>
+                            <option value="popularity" selected>по популярности</option>
                             <option value="price-asc">сначала недорогие</option>
                             <option value="price-desc">сначала дорогие</option>
                             <option value="fat-percentage">по жирности</option>
@@ -212,11 +212,11 @@
                         </div>
                         <label class="visually-hidden">
                             Минимальная цена
-                            <input type="hidden" name="price-min">
+                            <input type="hidden" name="price-min" value="100">
                         </label>
                         <label class="visually-hidden">
                             Максимальная цена
-                            <input type="hidden" name="price-max">
+                            <input type="hidden" name="price-max" value="500">
                         </label>
                     </div>
                     <!-- END .filters__price -->
