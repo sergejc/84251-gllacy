@@ -156,7 +156,6 @@ input[type="radio"].visually-hidden {
 .site-nav__link:hover {
     color: #323232;
     background-color: rgba(248, 247, 244, 0.988);
-    padding: 7px 13px;
     text-decoration: none;
 }
 
