@@ -17,6 +17,14 @@ document.querySelectorAll('.slider__label').forEach(function (el) {
     });
 });
 
+document.querySelector('.feed-back--button').addEventListener('click', function(evt){
+    document.querySelector('.feed-back-modal').classList.remove('visually-hidden');
+});
+
+document.querySelector('.feed-back-close').addEventListener('click', function(evt){
+    document.querySelector('.feed-back-modal').classList.add('visually-hidden');
+});
+
 /*
 document.querySelectorAll('.site-nav__link').forEach(function(el) {
     el.addEventListener('mouseenter', function (e) {
