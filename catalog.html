@@ -127,6 +127,39 @@
                                         <use xlink:href="#icon-shopping-card"></use>
                                     </svg>
                                 </button>
+                                <form action="#" class="shopping-card__form" method="post">
+                                    <ul class="shopping-card__list">
+                                        <li class="shopping-card__item">
+                                            <input type="hidden" name="product-id[]">
+                                            <button class="shopping-card__item-remove">
+                                                <span class="visually-hidden">Удалить из корзины</span>
+                                            </button>
+                                            <img class="shopping-card__item-img" src="../img/icecream-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                                            <div class="shopping-card__item-description">Пломбир с апельсиновым джемом</div>
+                                            <div class="shopping-card__item-price-weight">1,5 кг х
+                                                <span class="shopping-card__item-price-weight--rub">200 руб.</span>
+                                            </div>
+                                            <div class="shopping-card__item-price">300 руб.</div>
+                                        </li>
+                                        <li class="shopping-card__item">
+                                            <input type="hidden" name="product-id[]">
+                                            <button class="shopping-card__item-remove">
+                                                <span class="visually-hidden">Удалить из корзины</span>
+                                            </button>
+                                            <img class="shopping-card__item-img" src="../img/icecream-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                                            <span class="shopping-card__item-description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                                            <span class="shopping-card__item-price-weight">1,5 кг х
+                                                <span class="shopping-card__item-price-weight--rub">300 руб.</span>
+                                            </span>
+                                            <span class="shopping-card__item-price">450 руб.</span>
+                                        </li>
+                                        <div class="shoping-card__totals">
+                                            <div class="shoping-card__total">Итого: 750 руб.</div>
+                                            <button class="shopping-card__order button" type="submit">Оформить заказ</button>
+                                        </div>
+                                    </ul>
+                                </form>
+                                <!-- END .shopping-card__form -->
                             </div>
                             <!-- END .shopping-card -->
                         </li>
