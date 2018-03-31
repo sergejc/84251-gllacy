@@ -1492,14 +1492,13 @@ input[type="radio"].visually-hidden {
     left: 44px;
 }
 
-.filter__apply:hover,
- .filter__apply:hover {
+.filter__apply:hover {
     color: #323232;
     background-color: #fff;
 }
 
  .filter__apply:active {
-    box-shadow: inset 0 2px 1px #696969;
+    box-shadow: 0 -2px 1px #696969;
 }
 
 
