@@ -15,28 +15,29 @@ img {
 }
 
 .site-wrapper {
-    min-width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.site-wrapper-background1 {
+.site-background1 {
     background: url('../img/icecream1-banner.png') no-repeat top center;
     background-color: #849d8f;
     transition: background-image .5s ease,background-color .5s ease;
 }
 
-.site-wrapper-background2 {
+.site-background2 {
     background: url('../img/icecream2-banner.png') no-repeat top center;
     background-color: #8996a6;
     transition: background-image .5s ease,background-color .5s ease;
 }
 
-.site-wrapper-background3 {
+.site-background3 {
     background: url('../img/icecream3-banner.png') no-repeat top center;
     background-color: #9d8b84;
     transition: background-image .5s ease,background-color .5s ease;
 }
 
-.site-wrapper-catalog {
+.catalog {
     background-color: #849d8f;
 }
 
@@ -59,9 +60,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-    margin: 0 auto;
-    width: 1200px;
-    padding: 0 27px;
+    padding: 0 2.3%;
 }
 
 .button {
@@ -169,7 +168,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.site-wrapper-catalog .site-nav__link--current-page {
+.catalog .site-nav__link--current-page {
     background-color: #d07058;
     color: #fff;
 }
@@ -194,7 +193,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav__item:hover .catalog-menu,
- .site-nav__item--acitve .catalog-menu
+ .site-nav__item--active .catalog-menu
 {
     display: block;
 }
@@ -286,7 +285,8 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
 }
 
-.user-nav__item:hover  .user-nav__search-form {
+.user-nav__item:hover .user-nav__search-form,
+.user-nav__item--active .user-nav__search-form {
     display: block;
 }
 
@@ -338,6 +338,7 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
+.user-nav__item--active .user-nav__login,
 .user-nav__item:hover .user-nav__login {
     display: block;
 }
@@ -443,7 +444,8 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-.user-nav__item:hover .shopping-card__form{
+.user-nav__item--active .shopping-card__form,
+.user-nav__item:hover .shopping-card__form {
     display: block;
 }
 
