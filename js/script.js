@@ -24,30 +24,3 @@ document.querySelector('.feed-back--button').addEventListener('click', function(
 document.querySelector('.feed-back-close').addEventListener('click', function(evt){
     document.querySelector('.feed-back-modal').classList.add('visually-hidden');
 });
-
-/*
-document.querySelectorAll('.site-nav__link').forEach(function(el) {
-    el.addEventListener('mouseenter', function (e) {
-        e.target.closest('.site-nav__item').classList.add('site-nav__item--active');
-    });
-
-    el.addEventListener('mouseleave', function (e) {
-        setTimeout(function () {
-            e.target.closest('.site-nav__item').classList.remove('site-nav__item--active');
-        }, 300);
-    });
-});
-
-
-document.querySelectorAll('.user-nav__search, .user-nav__registration, .shopping-card__quantity').forEach(function(el) {
-    el.addEventListener('mouseenter', function (e) {
-        e.target.closest('.user-nav__item').classList.add('user-nav__item--active');
-    });
-
-    el.addEventListener('mouseleave', function (e) {
-        setTimeout(function () {
-            e.target.closest('.user-nav__item').classList.remove('user-nav__item--active');
-        }, 300);
-    });
-});
-*/

@@ -374,21 +374,28 @@ input[type="radio"].visually-hidden {
 .user-nav__links {
     font-size: 13px;
     line-height: 24px;
+    margin-top: -5px;
 }
 
 .user-nav__link {
     display: block;
     color: #323232;
     text-decoration: none;
+}
+
+.user-nav__remainder,
+.user-nav__new-reg {
     border-bottom: 1px solid #adacaa;
 }
 
-.user-nav__link:hover,
-.user-nav__link:active {
-    color: #ffbc9e;
-    border-bottom: 1px solid #ffbc9e;
+.user-nav__remainder:hover,
+.user-nav__remainder:active,
+.user-nav__new-reg:hover,
+.user-nav__new-reg:active {
+    color: #e84d37;
+    border-bottom: 1px solid #e84d37;
 }
-
+ 
 .shoping-card {
     position: relative;
 }
