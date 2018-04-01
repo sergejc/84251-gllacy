@@ -1609,7 +1609,7 @@ input[type="radio"].visually-hidden {
 
 .ingredients__checkbox:checked + .ingredients__label::before {
     background: url(../img/checkbox-on.svg) no-repeat;
-    background-size: 23px, 20px;
+    background-size: 22px, 20px;
 }
 
 /**
