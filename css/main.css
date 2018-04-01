@@ -141,6 +141,11 @@ input[type="radio"].visually-hidden {
     border-radius: 25px;
 }
 
+.catalog__link--onpage {
+    color: #fff;
+    background: #d07058;
+}
+
 .site-nav__link-text {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -211,6 +216,10 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #d1d0ce;
     margin: 0 11px;
     padding-left: 9px;
+}
+
+.catalog .catalog__link-top  {
+    border-bottom: 0;
 }
 
 .catalog__link {
@@ -1326,6 +1335,11 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
+.bread-crumbs__link:hover,
+ .bread-crumbs__link:active {
+    color: #ffbc9e;
+}
+
 .bread-crumbs__link {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1334,6 +1348,7 @@ input[type="radio"].visually-hidden {
     content: "»";
     position: absolute;
     right: -20px;
+    color: #fff;
 }
 
 .catalog-header {
@@ -1778,6 +1793,7 @@ input[type="radio"].visually-hidden {
     background-color: #839d8e;
     background: url('../img/icon-right-small.svg') no-repeat center center;
     transform: rotate(180deg);
+    opacity: 0.5;
 }
 
 .pagination__link.pagination__next {
