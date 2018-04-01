@@ -802,6 +802,7 @@ input[type="radio"].visually-hidden {
     border-radius: 10px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     text-align: center;
+    z-index: 1;
 }
 
 .best-sellers__item:hover .best-sellers__lightbox {
