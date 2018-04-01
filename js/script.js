@@ -25,10 +25,12 @@ var feedBackClose = document.querySelector('.feed-back-close');
 
 if (feedBackOpen && feedBackClose) {
     feedBackOpen.addEventListener('click', function (evt) {
+        evt.preventDefault();
         document.querySelector('.feed-back-modal').classList.remove('visually-hidden');
     });
-    
+
     feedBackClose.addEventListener('click', function (evt) {
+        evt.preventDefault();
         document.querySelector('.feed-back-modal').classList.add('visually-hidden');
     });
 }
