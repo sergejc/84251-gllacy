@@ -725,10 +725,12 @@ input[type="radio"].visually-hidden {
 }
 
 .promotion__item--paspberry {
+    background: #ff0000;
     background: url('../img/banner1.jpg') no-repeat;
 }
 
 .promotion__item--chocolate {
+    background: #784d3f;
     background: url('../img/banner2.jpg') no-repeat;
 }
 
@@ -829,6 +831,7 @@ input[type="radio"].visually-hidden {
 }
 
 .shop-info__items {
+    background: #eadec4;
     background: url(../img/waffles.jpg);
     border-radius: 15px;
     padding: 22px 20px 24px 20px;
@@ -920,6 +923,7 @@ input[type="radio"].visually-hidden {
 
 .news {
     padding: 23px 220px 30px 22px;
+    background: #5a5a5a;
     background: url('../img/news.jpg') no-repeat;
 }
 
@@ -965,6 +969,7 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     height: 430px;
     position: relative;
+    background: #ebe5c8;
     background: url('../img/map.jpg') no-repeat;
     margin: 0 auto;
 }
