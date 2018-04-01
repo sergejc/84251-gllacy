@@ -1587,7 +1587,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     width: 22px;
-    height: 19px;
+    height: 20px;
     display: block;
     background: url(../img/checkbox-off.svg) no-repeat;
     background-size: 19px, 19px;
