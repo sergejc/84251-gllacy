@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Глейси каталога товаров</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -191,7 +191,7 @@
                             </li>
                             <li class="bread-crumbs__item">Сливочное</li>
                         </ul>
-                        <div class="contacts__phone-num">8 812 450-25-25</div>
+                        <a class="contacts__phone-num"  href="tel:8-812-450-25-25">8 812 450-25-25</a>
                     </div>
                 </div>
                 <!-- END .bread-crumbs -->
@@ -216,7 +216,10 @@
                     </div>
                     <!-- END .filters__sort-order -->
                     <div class="filters__price">
-                        <h2 class="filters__price-header">Цена: 100 руб. – 500 руб.</h2>
+                        <div class="filters__price-header">Цена:
+                            <input class="filters__header-price-min" type="text" value="100" name="header-price-min"> руб. –
+                            <input class="filters__header-price-max" type="text" value="500" name="header-price-max"> руб.
+                        </div>
                         <div class="filters__price-range">
                             <span class="filter__price-min" role="slider" aria-valuenow="100" aria-valuemin="1" aria-valuemax="1000" tabindex="0"></span>
                             <span class="filter__price-max" role="slider" aria-valuenow="500" aria-valuemin="1" aria-valuemax="1000" tabindex="0"></span>
