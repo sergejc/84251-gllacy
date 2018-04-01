@@ -1523,6 +1523,11 @@ input[type="radio"].visually-hidden {
     border: 2px solid #fff;
     top: -2px;
     left: -3px;
+    opacity: 0.8;
+}
+
+.fat-percentage__label:hover::before {
+    opacity: 1;
 }
 
 .fat-percentage__label:focus:before {
@@ -1543,6 +1548,10 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
     top: 3px;
     left: 2px;
+    opacity: 0.8;
+}
+.fat-percentage__label:hover::after {
+    opacity: 1;
 }
 
 /**
@@ -1589,6 +1598,10 @@ input[type="radio"].visually-hidden {
     left: 0px;
     top: -2px;
     opacity: 0.8;
+}
+
+.ingredients__label:hover::before {
+    opacity: 1;
 }
 
 .ingredients__label:focus::before {
