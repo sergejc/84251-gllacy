@@ -1634,13 +1634,17 @@ input[type="radio"].visually-hidden {
 
 .product__price {
     position: absolute;
+    top: 210px;
+    margin: 0;
+    font: 0;
+}
+
+.product__price-text {
     font-size: 45px;
     font-weight: 800;
     text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
     line-height: 45px;
     color: #fff;
-    top: 210px;
-    margin: 0;
 }
 
 .product__link {
@@ -1690,6 +1694,7 @@ input[type="radio"].visually-hidden {
     line-height: 45px;
     font-weight: 700;
     text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+    color: #fff;
 }
 
 /**
