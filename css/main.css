@@ -1330,11 +1330,6 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.bread-crumbs__link:hover,
-.bread-crumbs__link:active {
-    color: #ffbc9e;
-}
-
 .bread-crumbs__link::after {
     content: "»";
     position: absolute;
