@@ -805,6 +805,22 @@ input[type="radio"].visually-hidden {
 .best-sellers__link:active {
     color: #ffbc9e;
 }
+
+.best-sellers__lightbox {
+    position: absolute;
+    width: 293px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: -13px;
+    top: -10px;
+    border-radius: 10px;
+    height: 125%;
+    display: none;
+}
+
+.best-sellers__item:hover .best-sellers__lightbox {
+    display: block;
+}
+
 /**
 * Shop-info
 */
@@ -1583,7 +1599,6 @@ input[type="radio"].visually-hidden {
  .filter__apply:active {
     box-shadow: 0 -2px 1px #696969;
 }
-
 
 /**
 * Products
