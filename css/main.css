@@ -1728,8 +1728,8 @@ input[type="radio"].visually-hidden {
     line-height: 22px;
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #9db1a5;
     margin-bottom: 15px;
+    display: inline-block;
 }
 
 .product__link:hover, 
@@ -1738,15 +1738,32 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #ffbc9e;
 }
 
-.product__lightbox {
+.product__link--decor {
+    border-bottom: 1px solid #9db1a5;
+}
+
+.product__item:hover::after {
+    content: "";
     position: absolute;
-    width: 293px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-left: -13px;
-    top: -10px;
-    border-radius: 10px;
-    height: 125%;
+    display: block;
+    width: 104%;
+    height: 107%;
+    margin-top: -3%;
+    margin-left: -2%;
+    padding-bottom: 60px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.4);
+    top: 0;
+    z-index: 1;
+}
+
+.product__lightbox {
     display: none;
+    z-index: 1;
+    position: absolute;
+    left: 28px;
+    z-index: 2;
 }
 
 .product__item:hover .product__lightbox {
@@ -1754,15 +1771,11 @@ input[type="radio"].visually-hidden {
 }
 
 .product__quick-view {
-    position: absolute;
     bottom: 15px;
-    left: 16%;
-    z-index: 1;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     padding: 11px 18px;
-    border: 0;
 }
 
 .product__weight {
