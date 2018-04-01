@@ -1467,7 +1467,7 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.filters__price-range::after {
+.filters__price-range::before {
     content: "";
     display: block;
     position: absolute;
@@ -1476,6 +1476,18 @@ input[type="radio"].visually-hidden {
     background: #f8f7f4;
     top: 17px;
     left: 16px;
+    opacity: 0.2;
+}
+
+.filters__price-range::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 82px;
+    height: 2px;
+    background: #f8f7f4;
+    top: 17px;
+    left: 51px;
 }
 
 .filter__price-min,
