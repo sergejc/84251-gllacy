@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Основная страница GllacyShop</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -30,8 +30,8 @@
                 <circle cx="15.984" cy="18" r="2" />
             </symbol>
             <symbol id="icon-currency-rub">
-                    <path d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
-                    v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z"/>
+                <path d="M11,21h7.451c5.247,0,9.5-4.253,9.5-9.5S23.698,2,18.451,2H11H7.379H6v14H2v5h4v3H2v5h4v4h5
+                    v-4h15v-5H11V21z M11,7h7.451V6.97c2.501,0,4.529,2.028,4.529,4.53s-2.028,4.53-4.529,4.53V16H11V7z" />
             </symbol>
         </defs>
     </svg>
@@ -129,7 +129,8 @@
                         <!-- END .user-nav__item -->
                         <li class="user-nav__item">
                             <div class="shopping-card">
-                                <button class="shopping-card__quantity"><span class="shpping-card__text">Пусто</span>
+                                <button class="shopping-card__quantity">
+                                    <span class="shpping-card__text">Пусто</span>
                                     <svg class="icon-shopping-card">
                                         <use xlink:href="#icon-shopping-card"></use>
                                     </svg>
@@ -168,18 +169,16 @@
                 <div class="slider__nav">
                     <ul class="slider__list">
                         <li class="slider__radio">
-                            <input class="slider__radio-button visually-hidden" id="slider__icecream1" type="radio" name="icecream"
-                                value="icecream1" checked>
+                            <input class="slider__radio-button visually-hidden" id="slider__icecream1" type="radio" name="icecream" value="icecream1"
+                                checked>
                             <label class="slider__label" for="slider__icecream1" aria-label="Первый слайд" tabindex="0"></label>
                         </li>
                         <li class="slider__radio">
-                            <input class="slider__radio-button visually-hidden" id="slider__icecream2" type="radio" name="icecream"
-                                value="icecream2">
+                            <input class="slider__radio-button visually-hidden" id="slider__icecream2" type="radio" name="icecream" value="icecream2">
                             <label class="slider__label" for="slider__icecream2" aria-label="Второй слайд" tabindex="0"></label>
                         </li>
                         <li class="slider__radio">
-                            <input class="slider__radio-button visually-hidden" id="slider__icecream3" type="radio" name="icecream"
-                                value="icecream3">
+                            <input class="slider__radio-button visually-hidden" id="slider__icecream3" type="radio" name="icecream" value="icecream3">
                             <label class="slider__label" for="slider__icecream3" aria-label="Третий слайд" tabindex="0"></label>
                         </li>
                     </ul>
@@ -225,7 +224,8 @@
                     </li>
                     <li class="best-sellers__item">
                         <img src="img/icecream-hit2.jpg" alt="Мороженое кофейное" class="best-sellers__image" width="267" height="267">
-                        <p class="best-sellers__price"><span class="best-sellert__price-font">380</span>
+                        <p class="best-sellers__price">
+                            <span class="best-sellert__price-font">380</span>
                             <svg class="icon-currency-rub">
                                 <use xlink:href="#icon-currency-rub"></use>
                             </svg>
@@ -238,7 +238,8 @@
                     </li>
                     <li class="best-sellers__item">
                         <img src="img/icecream-hit3.jpg" alt="Мороженое клубничное" class="best-sellers__image" width="267" height="267">
-                        <p class="best-sellers__price"><span class="best-sellert__price-font">355</span>
+                        <p class="best-sellers__price">
+                            <span class="best-sellert__price-font">355</span>
                             <svg class="icon-currency-rub">
                                 <use xlink:href="#icon-currency-rub"></use>
                             </svg>
@@ -251,7 +252,8 @@
                     </li>
                     <li class="best-sellers__item">
                         <img src="img/icecream-hit4.jpg" alt="Мороженое крем-брюле" class="best-sellers__image" width="267" height="267">
-                        <p class="best-sellers__price"><span class="best-sellert__price-font">415</span>
+                        <p class="best-sellers__price">
+                            <span class="best-sellert__price-font">415</span>
                             <svg class="icon-currency-rub">
                                 <use xlink:href="#icon-currency-rub"></use>
                             </svg>
@@ -318,7 +320,9 @@
                     <a class="button feed-back--button" href="#">Форма обратной связи</a>
                 </section>
                 <!-- END .feed-back -->
-                <a href="#" class="map__pin"><img src="img/map-pin.svg" alt="наш адрес на карте" width="80" height="140"></a>
+                <a href="#" class="map__pin">
+                    <img src="img/map-pin.svg" alt="наш адрес на карте" width="80" height="140">
+                </a>
             </div>
         </main>
         <!-- END .container -->
@@ -397,7 +401,7 @@
             </form>
         </div>
         <!-- END .feed-back-popup -->
-        <script src="js/script.js"></script>
+        <script src="js/script.min.js"></script>
     </div>
 </body>
 
