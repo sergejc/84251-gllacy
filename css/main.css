@@ -1553,7 +1553,7 @@ input[type="radio"].visually-hidden {
 .ingredients__label::before {
     content: "";
     position: absolute;
-    width: 23px;
+    width: 26px;
     height: 23px;
     display: block;
     background: url(../img/checkbox-off.svg) no-repeat;
