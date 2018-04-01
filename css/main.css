@@ -1188,10 +1188,11 @@ input[type="radio"].visually-hidden {
 
 .feed-back-modal__form {
     position: fixed;
-    top: 335px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    width: 480px;
+    transform: translate(-50%, -50%);
+    min-width: 480px;
+    min-height: 485px;
     background-color: #f8f7f4;
     padding: 20px 25px;
     border-radius: 10px;
