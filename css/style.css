@@ -139,6 +139,7 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     padding: 7px 13px 7px 14px;
     border-radius: 25px;
+    display: block;
 }
 
 .catalog__link--onpage {
@@ -156,14 +157,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav__item:hover .site-nav__link {
-    color: #323232;
-    background-color: rgba(248,247,244,.988);
-    text-decoration: none;
-    padding: 7px 13px 7px 14px;
-    border-radius: 25px;
-}
-
-.site-nav__link:hover {
     color: #323232;
     background-color: rgba(248, 247, 244, 0.988);
     text-decoration: none;
@@ -195,7 +188,7 @@ input[type="radio"].visually-hidden {
     line-height: 16px;
     background-color: #f8f7f4;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-    top: 45px;
+    top: 55px;
     left: -8px;
     border-radius: 5px;
     z-index: 2;
@@ -254,9 +247,9 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav__item {
-    position: relative;
     font-size: 0;
     padding: 15px 0;
+    position: relative;
 }
 
 .user-nav__item:nth-of-type(2) {
@@ -270,20 +263,23 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.2);
     border: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: center;
 }
 
-.user-nav__search:hover {
+.user-nav__item:hover .user-nav__search {
     background-color: #f8f7f4;
 }
 
-.user-nav__search:hover .icon-search {
+.user-nav__item:hover  .icon-search {
     fill: #000;
 }
 
 .icon-search {
     position: absolute;
     left: 8px;
-    top: 22px;
+    top: 8px;
     fill: #fff;
 }
 
@@ -321,31 +317,32 @@ input[type="radio"].visually-hidden {
 
 
 .user-nav__registration {
-    padding: 7px 15px 7px 44px;
+    display: block;
+    padding: 8px 17px 8px 45px;;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
     color: #fff;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    border: 0;
+    text-decoration: none;
+    position: relative;
 }
 
-.user-nav__registration:hover {
+.user-nav__item:hover .user-nav__registration {
     color: #323232;
     background-color: #f7f6f3
 }
 
-.user-nav__registration:hover  .icon-login {
+.user-nav__item:hover .icon-login {
     fill: #000;
 }
 
 .icon-login {
     position: absolute;
-    top: 20px;
-    left: 16px;
     fill: #fff;
+    left: 15px;
+    top: 6px;
 }
 
 .user-nav__login {
@@ -424,50 +421,35 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #e84d37;
 }
  
-.shoping-card {
-    position: relative;
-}
-
-.shopping-card__quantity {
+.shopping-card {
+    display: block;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 7px 12px 7px 44px;
+    padding: 8px 16px 8px 44px;
     border-radius: 20px;
-    cursor: pointer;
     border: 0;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    text-align: left;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
 }
 
-.shpping-card__text {
-    display: inline-block;
-    width: 60px;
-}
-
-.shopping-card__quantity:hover {
+.user-nav__item:hover .shopping-card {
     background-color: #f8f7f4;
     color: #323232;
 }
 
-.shopping-card__quantity:hover .icon-shopping-card {
+.user-nav__item:hover .icon-shopping-card {
     fill: #323232;
-}
-
-.shopping-car__quantity--full {
-    color: #323232; 
-    background-color: #f7f6f3;
-    padding-left: 45px;
-    padding-right: 15px;
 }
 
 .icon-shopping-card {
     position: absolute;
-    top: 20px;
+    top: 6px;
     left: 15px;
-    width: 26px;
-    height: 22px;;
     fill: #fff;
 }
 

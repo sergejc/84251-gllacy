@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Основная страница GllacyShop</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -94,13 +94,12 @@
                         </li>
                         <!-- END .user-nav__item -->
                         <li class="user-nav__item">
-                            <button class="user-nav__registration">
-                                <span class="visually-hidden">Открыть модальное окно Логин - Регистрация</span>
-                                Вход
+                            <a class="user-nav__registration" href="#">
                                 <svg class="icon-login" width="21px" height="19px">
                                     <use xlink:href="#icon-login"></use>
                                 </svg>
-                            </button>
+                                Вход
+                            </a>
                             <form action="#" class="user-nav__login" method="post">
                                 <fieldset class="user-nav__fieldset">
                                     <legend class="visually-hidden">Логин - Регистрация</legend>
@@ -128,14 +127,12 @@
                         </li>
                         <!-- END .user-nav__item -->
                         <li class="user-nav__item">
-                            <div class="shopping-card">
-                                <button class="shopping-card__quantity">
-                                    <span class="shpping-card__text">Пусто</span>
-                                    <svg class="icon-shopping-card">
-                                        <use xlink:href="#icon-shopping-card"></use>
-                                    </svg>
-                                </button>
-                            </div>
+                            <a class="shopping-card" href="#">
+                                <svg class="icon-shopping-card" width="22px" height="20px">
+                                    <use xlink:href="#icon-shopping-card"></use>
+                                </svg>
+                                Пусто
+                            </a>
                             <!-- END .shopping-card -->
                         </li>
                         <!-- END .user-nav__item -->
