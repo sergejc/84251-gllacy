@@ -1425,6 +1425,7 @@ input[type="radio"].visually-hidden {
     padding: 0 30px 0 16px;
     -webkit-appearance: none;
     -moz-appearance: none;
+    -ms-appearance: none;
     appearance: none;
     border-radius: 20px;
     position: relative;
@@ -1432,6 +1433,11 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.2);
     border: 0;
     cursor: pointer;
+}
+
+/** IE11 */
+.filter__sort-select::-ms-expand {
+    display: none;
 }
 
 .filter__sort-select:hover {
@@ -1458,8 +1464,12 @@ input[type="radio"].visually-hidden {
 .filters__header-price-max {
     width: 26px;
     border: 0;
+    padding: 0;
     background: transparent;
     color: #fff;
+    line-height: 16px;
+    height: 16px;
+    font-size: 14px;
 }
 
 .filters__price-range {
@@ -1608,6 +1618,7 @@ input[type="radio"].visually-hidden {
 */
 .filters__ingredients {
     width: 700px;
+    margin-right: 16px;
 }
 
 .ingredients__header {
@@ -1670,12 +1681,12 @@ input[type="radio"].visually-hidden {
 * Filter applie
 */
 .filter__apply-container {
-    position: relative;
     flex-grow: 1;
+    padding-top: 23px;
 }
 
+
 .filter__apply  {
-    position: absolute;
     font-size: 16px;
     line-height: 18px;
     color: #fff;
@@ -1683,9 +1694,7 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid #f6f8f7;
     border-radius: 20px;
-    padding: 7px 20px;
-    top: 21px;
-    left: 17px;
+    padding: 7px 27px 7px 29px;
     cursor: pointer;
 }
 
