@@ -123,6 +123,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     padding: 0;
     margin: 0;
+    /*list-style-image: url(data:0);*/
 }
 
 .site-nav {
@@ -1438,9 +1439,11 @@ input[type="radio"].visually-hidden {
 }
 
 /** IE11 */
+/*
 .filter__sort-select::-ms-expand {
     display: none;
 }
+*/
 
 .filter__sort-select:hover {
     color: #323232;

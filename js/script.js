@@ -8,16 +8,16 @@ function changeBackground(el) {
         el.getAttribute('for').replace(/[^0-9]/g, '')
     );
     var wrapper = document.querySelector('body');
-    wrapper.classList = classList[num - 1];
+    wrapper.className = classList[num - 1];
 }
 
-var sliderLabel = document.querySelectorAll('.slider__label');
-if (sliderLabel) {
-    sliderLabel.forEach(function (el) {
-        el.addEventListener('click', function (e) {
+var sliderLabels = document.querySelectorAll('.slider__label');
+if (sliderLabels) {
+    for (var i = 0; i < sliderLabels.length; i++) {
+        sliderLabels[i].addEventListener('click', function (e) {
             changeBackground(this);
         });
-    });
+    }
 }
 
 var feedBackOpen = document.querySelector('.feed-back--button');
