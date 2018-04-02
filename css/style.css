@@ -437,12 +437,14 @@ input[type="radio"].visually-hidden {
     color: #fff;
 }
 
-.user-nav__item:hover .shopping-card {
+.user-nav__item:hover .shopping-card,
+.shopping-card--full {
     background-color: #f8f7f4;
     color: #323232;
 }
 
-.user-nav__item:hover .icon-shopping-card {
+.user-nav__item:hover .icon-shopping-card,
+.shopping-card--full .icon-shopping-card {
     fill: #323232;
 }
 
