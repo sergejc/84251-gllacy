@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -629,9 +629,9 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-.site-wrapper-background1 .slider__text1,
-.site-wrapper-background2 .slider__text2,
-.site-wrapper-background3 .slider__text3 {
+.site-background1 .slider__text1,
+.site-background2 .slider__text2,
+.site-background3 .slider__text3 {
     display: block;
 }
 
@@ -819,6 +819,8 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     margin-bottom: 5px;
     display: inline-block;
+    position: relative;
+    z-index: 1;
 }
 
 .best-sellers__link:hover,
