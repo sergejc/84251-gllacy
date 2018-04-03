@@ -34,3 +34,24 @@ if (feedBackOpen && feedBackClose) {
         document.querySelector('.feed-back-modal').classList.add('visually-hidden');
     });
 }
+
+var name = document.querySelector('.feed-back-modal__user-name');
+var email = document.querySelector('.feed-back-modal__email');
+var modal = document.querySelector('.feed-back-modal__form');
+modal.addEventListener('submit', function(evt){
+    evt.preventDefault();
+    if (evt.target.classList) {
+        if(!name.value || !email.value) {
+            modal.classList.add('modal-error');
+            setTimeout(function(){
+                modal.classList.remove('modal-error');
+            }, 1000);
+        }
+    }
+})
+
+document.querySelector('.feed-back-close').addEventListener('click', function(evt){
+    if (evt.target.classList) {
+        modal.classList.remove('modal-error');
+    }
+})

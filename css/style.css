@@ -329,7 +329,6 @@ input[type="radio"].visually-hidden {
     box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
-
 .user-nav__registration {
     display: block;
     padding: 8px 17px 8px 45px;;
@@ -447,6 +446,11 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     color: #fff;
 }
+
+.main-page[class*="site-background"] .shopping-card {
+    padding-right: 34px;
+}
+
 
 .user-nav__item:hover .shopping-card,
 .shopping-card--full {
@@ -1254,7 +1258,11 @@ input[type="radio"].visually-hidden {
     position: fixed;
     top: 50%;
     left: 50%;
+    margin-left: -240px;
+    margin-top: -250px;
+    /*
     transform: translate(-50%, -50%);
+    */
     width: 480px;
     min-height: 485px;
     background-color: #f8f7f4;
@@ -1343,6 +1351,17 @@ input[type="radio"].visually-hidden {
 
 .feed-back-close:after {
     transform: rotate(-45deg);
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-3px); }
+    20%, 40%, 60%, 80% {transform: translateX(3px); }
+}
+
+.modal-error {
+    animation-name: shake;;
+    animation-duration: 0.6s;
 }
 
 /**
@@ -1838,49 +1857,6 @@ input[type="radio"].visually-hidden {
 .product__item:hover .product__quick-view {
     display: block;
 }
-
-/*
-.product__item:hover {
-    display: block;
-}
-
-.product__lightbox {
-    display: none;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-    height: 120%;
-    background-color: rgba(255,255,255,.2);
-    border-radius: 5px;
-    box-shadow: 0 20px 20px rgba(0,0,0,.4);
-    top: 0;
-    left: 0;
-}
-
-.product__item:hover .product__lightbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 20px;
-    align-items: center;
-}
-
-.product__quick-view {
-    bottom: 15px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 800;
-    padding: 11px 18px;
-}
-
-.product__weight {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 700;
-    text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
-    color: #fff;
-}
-*/
 
 /**
 * Pagination
