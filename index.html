@@ -378,19 +378,17 @@
         <!-- END .main-footer -->
         <div class="feed-back-modal visually-hidden">
             <form class="feed-back-modal__form" action="#" method="post">
-                <div class="feed-back__container">
-                    <fieldset class="feed-back-modal__fieldset">
-                        <legend class="feed-back-modal__legend">Мы обязательно вам ответим!</legend>
-                        <label for="feed-back-modal__user-name" class="visually-hidden">Имя</label>
-                        <input class="feed-back-modal__user-name" id="feed-back-modal__user-name" type="text" name="name" placeholder="Как вас зовут?">
-                        <label for="feed-back-modal__email" class="visually-hidden">Адрес электронной почты</label>
-                        <input class="feed-back-modal__email" id="feed-back-modal__email" type="email" name="email" placeholder="Ваша почта для ответа?">
-                        <label for="feed-back__text" class="visually-hidden">Текст для отзыва</label>
-                        <textarea class="feed-back__text" id="feed-back__text" name="feed-back" cols="30" rows="10">Напишите что-нибудь...</textarea>
-                        <button class="button feed-back__button" type="submit">Отправить</button>
-                        <button class="feed-back-close" aria-label="Закрыть форму обратной своей" type="button"></button>
-                    </fieldset>
-                </div>
+                <button class="feed-back-close" aria-label="Закрыть форму обратной своей" type="button"></button>
+                <fieldset class="feed-back-modal__fieldset">
+                    <legend class="feed-back-modal__legend">Мы обязательно вам ответим!</legend>
+                    <label for="feed-back-modal__user-name" class="visually-hidden">Имя</label>
+                    <input class="feed-back-modal__user-name" id="feed-back-modal__user-name" type="text" name="name" placeholder="Как вас зовут?">
+                    <label for="feed-back-modal__email" class="visually-hidden">Адрес электронной почты</label>
+                    <input class="feed-back-modal__email" id="feed-back-modal__email" type="email" name="email" placeholder="Ваша почта для ответа?">
+                    <label for="feed-back__text" class="visually-hidden">Текст для отзыва</label>
+                    <textarea class="feed-back__text" id="feed-back__text" name="feed-back" cols="30" rows="10">Напишите что-нибудь...</textarea>
+                </fieldset>
+                <button class="button feed-back__button" type="submit">Отправить</button>
             </form>
         </div>
         <!-- END .feed-back-popup -->

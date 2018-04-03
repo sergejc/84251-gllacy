@@ -1238,15 +1238,11 @@ input[type="radio"].visually-hidden {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 480px;
+    width: 480px;
     min-height: 485px;
     background-color: #f8f7f4;
     padding: 20px 25px;
     border-radius: 10px;
-}
-
-.feed-back__container {
-    position: relative;
 }
 
 .feed-back-modal__fieldset {
@@ -1255,6 +1251,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     display: flex;
     position: relative;
+    flex-direction: column;
 }
 
 .feed-back-modal__legend {
@@ -1297,7 +1294,7 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     line-height: 24px;
     padding: 10px 25px;
-    margin-left: auto;
+    float: right;
 }
 
 .feed-back-close {
@@ -1309,6 +1306,8 @@ input[type="radio"].visually-hidden {
     border: 0;
     background-color: #f8f7f4;
     cursor: pointer;
+    top: 10px;
+    right: 10px;
 }
 
 .feed-back-close:before, .feed-back-close:after {
