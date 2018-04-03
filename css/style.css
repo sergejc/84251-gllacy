@@ -824,7 +824,7 @@ input[type="radio"].visually-hidden {
     line-height: 22px;
     font-weight: 600;
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: block;
     position: relative;
     z-index: 1;
@@ -1781,16 +1781,17 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     margin-bottom: 15px;
     display: block;
-}
-
-.product__link:hover, 
-.product__link:active {
-    color: #ffbc9e;
-    border-bottom: 1px solid #ffbc9e;
+    position: relative;
+    z-index: 3;
 }
 
 .product__link--decor {
     border-bottom: 1px solid #9db1a5;
+}
+
+.product__link--decor:hover {
+    color: #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
 }
 
 /**
