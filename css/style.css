@@ -9,6 +9,14 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+/**
+* IE fix
+*/
+main {
+    display: block;
+    width: 100%;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -72,7 +80,7 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     border-radius: 35px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: baseline;
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
     background-color: #f26843;
     background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
@@ -127,6 +135,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     padding: 0;
     margin: 0;
+    /** IE fix */
     /*list-style-image: url(data:0);*/
 }
 
@@ -1458,6 +1467,8 @@ input[type="radio"].visually-hidden {
 */
 .filters__price {
     width: 220px;
+    /** IE fix */
+    margin: 0 14px;
 }
 
 .filters__price-header {
