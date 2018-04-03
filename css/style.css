@@ -854,23 +854,22 @@ input[type="radio"].visually-hidden {
     top: 0;
 }
 
-.best-sellers__lightbox {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    left: 28px;
-}
-
-.best-sellers__item:hover .best-sellers__lightbox {
+.best-sellers__item:hover .best-sellers__quick-view {
     display: block;
 }
 
 .best-sellers__quick-view {
-    bottom: 15px;
+    display: none;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     padding: 11px 18px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 1;
 }
 
 /**
