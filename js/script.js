@@ -22,29 +22,33 @@ if (sliderLabels) {
 
 var feedBackOpen = document.querySelector('.feed-back--button');
 var feedBackClose = document.querySelector('.feed-back-close');
+var feedBackModal = document.querySelector('.feed-back-modal');
+var feedBackModalForm = document.querySelector('.feed-back-modal__form');
 
 if (feedBackOpen && feedBackClose) {
     feedBackOpen.addEventListener('click', function (evt) {
         evt.preventDefault();
-        document.querySelector('.feed-back-modal').classList.remove('visually-hidden');
+        feedBackModal.classList.remove('visually-hidden');
+        feedBackModalForm.classList.add('modal-show');
     });
 
     feedBackClose.addEventListener('click', function (evt) {
         evt.preventDefault();
-        document.querySelector('.feed-back-modal').classList.add('visually-hidden');
+        feedBackModal.classList.add('visually-hidden');
+        feedBackModalForm.classList.remove('modal-show');
     });
 }
 
-var name = document.querySelector('.feed-back-modal__user-name');
-var email = document.querySelector('.feed-back-modal__email');
-var modal = document.querySelector('.feed-back-modal__form');
-modal.addEventListener('submit', function(evt){
-    evt.preventDefault();
+feedBackModalForm.addEventListener('submit', function(evt){
     if (evt.target.classList) {
+        var name = document.querySelector('.feed-back-modal__user-name');
+        var email = document.querySelector('.feed-back-modal__email');
         if(!name.value || !email.value) {
-            modal.classList.add('modal-error');
+            evt.preventDefault();
+            feedBackModalForm.classList.remove('modal-show');
+            feedBackModalForm.classList.add('modal-error');
             setTimeout(function(){
-                modal.classList.remove('modal-error');
+                feedBackModalForm.classList.remove('modal-error');
             }, 1000);
         }
     }
@@ -52,6 +56,21 @@ modal.addEventListener('submit', function(evt){
 
 document.querySelector('.feed-back-close').addEventListener('click', function(evt){
     if (evt.target.classList) {
-        modal.classList.remove('modal-error');
+        feedBackModalForm.classList.remove('modal-error');
+        feedBackModalForm.classList.remove('modal-show');
     }
 })
+
+
+function initMap() {
+    var uluru = {lat: 59.9393201, lng: 30.323491};
+    var map = new google.maps.Map(document.getElementById('google-map'), {
+      zoom: 16,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: "img/map-pin.svg"
+    });
+  }

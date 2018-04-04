@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Основная страница GllacyShop</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -295,6 +295,7 @@
                 <!-- END .subscribe -->
             </div>
             <div class="map">
+                <div class="google-map" id="google-map"></div>
                 <section class="feed-back">
                     <h2 class="visually-hidden">Форма обратной связи</h2>
                     <h3 class="feed-back__title">Адрес главного офиса
@@ -389,6 +390,8 @@
         <!-- END .feed-back-popup -->
     </div>
     <script src="js/script.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm1A4dCo5Wte_pxAIS-oyoCo97sn2Jc2w&callback=initMap">
+    </script>
 </body>
 
 </html>
