@@ -765,8 +765,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promotion__item {
-    padding: 15px 18px 0 20px;
-    height: 230px;
+    padding: 15px 18px 23px 20px;
     width: 560px;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1068,7 +1067,6 @@ input[type="radio"].visually-hidden {
     padding: 30px 15px 27px 22px;
     background-color: #f8f7f4;
     border-radius: 25px;
-    min-height: 100%;
 }
 
 .subscribe__input {
@@ -1094,7 +1092,7 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe__action--button {
-    padding: 8px 15px 12px 20px;
+    padding: 8px 15px 8px 20px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
