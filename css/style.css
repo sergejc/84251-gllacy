@@ -1053,7 +1053,7 @@ input[type="radio"].visually-hidden {
 
 .news {
     padding: 23px 220px 30px 22px;
-    background-color: #5a5a5a;
+    background-color: #fff;
     background: url('../img/news.jpg') no-repeat;
 }
 
